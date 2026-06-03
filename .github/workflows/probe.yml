@@ -1,0 +1,41 @@
+name: Probe RPCs
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # every 30 minutes (GitHub cron is best-effort)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Probe and score RPCs
+        run: npm run probe
+
+      - name: Commit updated data
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner }}@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Update RPC scores ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
