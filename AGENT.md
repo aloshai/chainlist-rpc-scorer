@@ -13,7 +13,7 @@ Each run is an independent snapshot. **No historical/rolling state is kept** by
 design (git history is the only time series). Do not add a DB or persistence
 layer unless the project goal explicitly changes.
 
-## ⛔ Commit rules (important)
+## Commit rules (important)
 
 - Commits MUST be authored **only under the repository owner's git profile**
   (`aloshai`). The CI workflow already sets this via `github.repository_owner`.
