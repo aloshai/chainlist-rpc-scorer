@@ -1,92 +1,165 @@
-# Chainlist RPC Scorer
+<div align="center">
 
-A **data-only** project that scores and ranks blockchain RPC endpoints. A GitHub
-Actions cron job fetches the RPC list from [Chainlist](https://chainlist.org),
-actively probes each endpoint, scores it, and commits the result as JSON into
-this repository. There is **no server and no database** — consumers read the
-JSON directly.
+# ⚡ Chainlist RPC Scorer
 
-## Consuming the data
+### Continuously scored & ranked blockchain RPC endpoints — no server, no database, just data.
 
-Each monitored chain has a ranked file (best RPC first):
+[![Probe RPCs](https://github.com/aloshai/chainlist-rpc-scorer/actions/workflows/probe.yml/badge.svg)](https://github.com/aloshai/chainlist-rpc-scorer/actions/workflows/probe.yml)
+![Last update](https://img.shields.io/github/last-commit/aloshai/chainlist-rpc-scorer?label=last%20scored&color=brightgreen)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Chains](https://img.shields.io/badge/chains-10-blue)
+![Runs every](https://img.shields.io/badge/refresh-30%20min-orange)
+![No server](https://img.shields.io/badge/infra-zero-success)
 
-```
-https://raw.githubusercontent.com/<owner>/chainlist-rpc-scorer/main/data/chains/<chainId>.json
-```
+*A GitHub Action probes every RPC on [Chainlist](https://chainlist.org), measures how fast, fresh, and rate‑limit‑tolerant each one is, then commits a ranked list straight into this repo. You just `curl` the JSON.*
 
-Example — best Ethereum RPC right now:
+</div>
+
+---
+
+## 🚀 Grab the best RPC in one line
 
 ```bash
-curl -s .../data/chains/1.json | jq '.rpcs[0]'
+# Fastest, healthiest Ethereum RPC right now 👇
+curl -s https://raw.githubusercontent.com/aloshai/chainlist-rpc-scorer/main/data/chains/1.json | jq -r '.rpcs[0].url'
 ```
 
-`data/index.json` lists all monitored chains with summary counts.
+```
+https://eth.blockrazor.xyz
+```
 
-### Output shape
+That's it. No API key, no rate limit, no sign‑up. The list is just a file in this repo, refreshed every ~30 minutes.
 
-`data/chains/1.json`:
+> 📂 Browse all chains in [`data/index.json`](data/index.json) · each chain lives at `data/chains/<chainId>.json`
+
+---
+
+## 🧠 How it works
+
+```mermaid
+flowchart LR
+    CL["🌐 Chainlist<br/>rpcs.json"] --> SRC["1 Source<br/>filter + clean"]
+    SRC --> PRB["2 Prober<br/>latency · liveness<br/>freshness · rate‑limit"]
+    PRB --> SCR["3 Scorer<br/>0–100 composite"]
+    SCR --> OUT["4 Output<br/>ranked JSON"]
+    OUT --> GIT[("📦 data/ in repo")]
+    CRON["⏰ GitHub Actions<br/>every 30 min"] -.triggers.-> SRC
+    GIT --> YOU["🧑‍💻 You<br/>curl / fetch"]
+```
+
+Every run is a **fresh snapshot** — each RPC is actively probed and scored from scratch:
+
+| 🧪 Metric | What we measure | Why it matters |
+|----------|-----------------|----------------|
+| ❤️ **Liveness** | `eth_chainId` + `eth_blockNumber` succeed **and** the returned chain ID matches | Filters dead nodes and spoofed/wrong‑chain endpoints — fail this gate and your score is `0` |
+| 🏎️ **Latency** | Repeated `eth_blockNumber` calls → median (p50) + p95 | A snappy RPC keeps your dApp responsive |
+| 🧊 **Freshness** | Returned block vs. the highest block across the chain's RPCs → `blockLag` | A lagging node serves stale state |
+| 🚦 **Rate limit** | Aggressive burst test ramps concurrency until throttled (HTTP 429 / quota) | Tells you how hard you can hammer it |
+
+### 📐 The score
+
+```
+score = 0.40 · latency  +  0.30 · freshness  +  0.30 · rateLimit      (each sub‑score 0–100)
+```
+
+Dead or wrong‑chain endpoints are gated to **0** and sink to the bottom of the list. Weights and thresholds are all tunable in [`src/config.ts`](src/config.ts).
+
+---
+
+## 📦 What the data looks like
+
+`data/chains/1.json` (top of the ranked list):
 
 ```json
 {
   "chainId": 1,
   "name": "Ethereum Mainnet",
-  "updatedAt": "2026-06-03T12:00:00Z",
+  "updatedAt": "2026-06-03T09:41:27.598Z",
   "rpcs": [
     {
-      "url": "https://...",
-      "score": 92.4,
+      "url": "https://eth.blockrazor.xyz",
+      "tracking": "none",
+      "score": 100,
       "alive": true,
-      "latencyMs": { "p50": 88, "p95": 140 },
+      "latencyMs": { "p50": 19, "p95": 19 },
       "blockLag": 0,
-      "rateLimit": { "sustainableRps": 25, "throttled": false },
-      "subScores": { "latency": 95, "freshness": 100, "rateLimit": 80 },
+      "rateLimit": { "sustainableRps": 40, "throttled": false },
+      "subScores": { "latency": 100, "freshness": 100, "rateLimit": 100 },
       "errorKind": null
     }
   ]
 }
 ```
 
-## How scoring works
+`data/index.json` summarizes every monitored chain:
 
-Each RPC is probed every run (no history is kept — each run is a fresh snapshot):
+```json
+{
+  "updatedAt": "2026-06-03T09:41:27.598Z",
+  "chains": [
+    { "chainId": 1, "name": "Ethereum Mainnet", "rpcCount": 74, "aliveCount": 36, "file": "chains/1.json" }
+  ]
+}
+```
 
-| Metric | Measurement |
-|--------|-------------|
-| **Liveness** | `eth_chainId` + `eth_blockNumber` succeed and the returned chain ID matches. A failed gate means score `0`. |
-| **Latency** | Repeated `eth_blockNumber` calls → median (p50) + p95. |
-| **Block freshness** | Returned block vs. the max block across that chain's RPCs → `blockLag`. |
-| **Rate limit** | An aggressive burst test ramps concurrency until throttled (HTTP 429 / quota errors). |
+---
 
-Composite score (0–100) = weighted sum of latency (40%), freshness (30%), and
-rate-limit (30%) sub-scores. Weights and thresholds live in
-[`src/config.ts`](src/config.ts).
+## 🔗 Monitored chains
 
-> Note: latency / rate-limit are measured from GitHub-hosted runners (a single
-> network vantage point), so they reflect relative ranking rather than absolute
-> performance from your own location.
+| | Chain | ID | | Chain | ID |
+|---|-------|----|---|-------|----|
+| 🟣 | Ethereum | `1` | 🔵 | Base | `8453` |
+| 🟡 | BNB Smart Chain | `56` | 🔺 | Avalanche C | `43114` |
+| 🟪 | Polygon | `137` | 👻 | Fantom | `250` |
+| 🔷 | Arbitrum One | `42161` | 🦉 | Gnosis | `100` |
+| 🔴 | OP Mainnet | `10` | ⚫ | Cronos | `25` |
 
-## Configuration
+Want more? Add the chain ID to `chains` in [`src/config.ts`](src/config.ts) — the next run picks it up automatically.
 
-Edit [`src/config.ts`](src/config.ts):
+---
 
-- `chains` — chain IDs to monitor.
-- `weights` — scoring weights.
-- `probe` / `burst` — sampling, timeouts, concurrency, and burst-test caps.
-- `scoring` — latency/freshness/rate-limit thresholds.
-
-## Running locally
+## 🛠️ Run it yourself
 
 ```bash
 npm ci
-npm run probe       # fetch, probe, score, write data/
-npm test            # unit tests
+npm run probe       # fetch → probe → score → write data/
+npm test            # 24 unit tests (scorer, prober, source, output)
 npm run typecheck   # tsc --noEmit
 ```
 
-## Architecture
+No `.env`, no services to spin up. The same `npm run probe` is what the GitHub Action runs.
 
-A pure core (`source → prober → scorer → output`) invoked by a thin CLI
-(`src/index.ts`) and the GitHub Actions workflow. The core has no dependency on
-the run surface, so it could later be wrapped by an HTTP service without changes.
+---
 
-See [`docs/superpowers/specs/`](docs/superpowers/specs/) for the design spec.
+## 🗂️ Project structure
+
+```
+chainlist-rpc-scorer/
+├── src/
+│   ├── config.ts     # chains, weights, probe & burst tunables
+│   ├── source.ts     # 1 · fetch + filter Chainlist
+│   ├── prober.ts     # 2 · probe one RPC → ProbeResult
+│   ├── scorer.ts     # 3 · ProbeResult → 0–100 score (pure)
+│   ├── output.ts     # 4 · ranked JSON writer
+│   ├── index.ts      #     CLI orchestrator
+│   └── types.ts
+├── test/             # vitest specs + fixtures
+├── data/             # 🤖 generated & committed by the Action
+└── .github/workflows/probe.yml
+```
+
+The core (`source → prober → scorer`) is pure and side‑effect‑free, so a future HTTP service could wrap the exact same code without a rewrite.
+
+---
+
+## ⚠️ Honest caveat
+
+Latency and rate‑limit numbers are measured from **GitHub‑hosted runners** — a single network vantage point in an Azure datacenter. Treat them as a **relative ranking**, not the absolute latency you'll see from your own location. Freshness and liveness are vantage‑independent and fully reliable.
+
+---
+
+<div align="center">
+
+Built with TypeScript · powered by [Chainlist](https://chainlist.org) · hosted on nothing but a `data/` folder 🪶
+
+</div>
