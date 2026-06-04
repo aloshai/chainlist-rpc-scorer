@@ -1,15 +1,15 @@
 {
   "chainId": 25,
   "name": "Cronos Mainnet",
-  "updatedAt": "2026-06-04T17:05:46.286Z",
+  "updatedAt": "2026-06-04T18:17:03.628Z",
   "rpcs": [
     {
-      "url": "https://rpc.vvs.finance",
-      "score": 96,
+      "url": "https://evm.cronos.org",
+      "score": 95.2,
       "alive": true,
       "latencyMs": {
-        "p50": 289,
-        "p95": 340
+        "p50": 328,
+        "p95": 689
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,7 +17,27 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 90,
+        "latency": 88,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.vvs.finance",
+      "score": 94.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 344,
+        "p95": 399
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 87,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -26,32 +46,11 @@
     {
       "url": "https://cronos-evm-rpc.publicnode.com",
       "tracking": "none",
-      "score": 91,
-      "alive": true,
-      "latencyMs": {
-        "p50": 58,
-        "p95": 211
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://cronos.drpc.org",
-      "tracking": "none",
       "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 23,
-        "p95": 27
+        "p50": 85,
+        "p95": 140
       },
       "blockLag": 4,
       "rateLimit": {
@@ -66,21 +65,22 @@
       "errorKind": null
     },
     {
-      "url": "https://evm.cronos.org",
-      "score": 87,
+      "url": "https://cronos.drpc.org",
+      "tracking": "none",
+      "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 294,
-        "p95": 387
+        "p50": 21,
+        "p95": 24
       },
-      "blockLag": 3,
+      "blockLag": 5,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 90,
-        "freshness": 70,
+        "latency": 100,
+        "freshness": 50,
         "rateLimit": 100
       },
       "errorKind": null
@@ -91,8 +91,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 75,
-        "p95": 77
+        "p50": 48,
+        "p95": 50
       },
       "blockLag": 5,
       "rateLimit": {
@@ -133,7 +133,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://mmf-rpc.xstaking.sg",
