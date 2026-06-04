@@ -38,8 +38,13 @@ export interface Config {
 
 export const config: Config = {
   chainlistUrl: process.env.CHAINLIST_URL ?? 'https://chainlist.org/rpcs.json',
-  // Ethereum, BSC, Polygon, Arbitrum One, Optimism, Base, Avalanche C, Fantom, Gnosis, Cronos
-  chains: [1, 56, 137, 42161, 10, 8453, 43114, 250, 100, 25],
+  chains: [
+    // Mainnets: Ethereum, BSC, Polygon, Arbitrum One, Optimism, Base, Avalanche C, Fantom, Gnosis, Cronos
+    1, 56, 137, 42161, 10, 8453, 43114, 250, 100, 25,
+    // Testnets: ETH Sepolia, ETH Holesky, BSC Testnet, Polygon Amoy, Arbitrum Sepolia,
+    // OP Sepolia, Base Sepolia, Avalanche Fuji, Fantom Testnet, Gnosis Chiado, Cronos Testnet
+    11155111, 17000, 97, 80002, 421614, 11155420, 84532, 43113, 4002, 10200, 338,
+  ],
   weights: { latency: 0.4, freshness: 0.3, rateLimit: 0.3 },
   probe: {
     samples: 5,
