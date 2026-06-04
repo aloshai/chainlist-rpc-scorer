@@ -27,6 +27,7 @@ A pure core invoked by a thin CLI and the Actions workflow:
 
 ```
 config → source → prober → scorer → output
+                    (run.ts orchestrates; index.ts is the CLI entry)
 ```
 
 | File | Responsibility | Purity |
@@ -35,8 +36,9 @@ config → source → prober → scorer → output
 | `src/source.ts` | Fetch Chainlist, filter to configured chains, clean URLs | `parseChainSources` is pure; `fetchChainSources` does I/O |
 | `src/prober.ts` | Probe one RPC → `ProbeResult`. Never throws. | I/O (fetch) only; no scoring |
 | `src/scorer.ts` | `ProbeResult` + chain max block → `ScoredRpc`. | **pure** |
-| `src/output.ts` | `rankRpcs` (pure) + `writeOutputs` (filesystem) | mixed |
-| `src/index.ts` | Orchestrates the run; preserves old data if Chainlist is down | I/O |
+| `src/output.ts` | `rankRpcs` (pure, privacy tie-break) + `writeOutputs` (filesystem) | mixed |
+| `src/run.ts` | Orchestrator: `run(deps)` with injected I/O + `probeAndScoreChain`. Probes chains and RPCs with bounded concurrency; preserves old data if Chainlist is down. | dependency-injected, testable |
+| `src/index.ts` | Thin CLI entry: wires real deps into `run` | I/O |
 | `src/types.ts` | Shared types | — |
 
 **Keep `prober` and `scorer` free of any dependency on the run surface** (no
@@ -52,6 +54,9 @@ separation is what would let the core be wrapped by an HTTP service later.
 - `blockLag` is computed by the **scorer** (it needs the chain-wide max block),
   not the prober.
 - Missing burst data → rate-limit sub-score is a neutral `50`.
+- Ranking (`rankRpcs`) sorts by score desc, then breaks ties by Chainlist
+  `tracking` privacy (`none` > `limited` > `yes` > unknown). The tie-break does
+  **not** change the composite score, only ordering among equal scores.
 
 ## Conventions & gotchas
 
