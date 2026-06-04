@@ -16,6 +16,8 @@ export interface Config {
     timeoutMs: number;
     /** Max RPCs probed in parallel within a single chain. */
     perChainConcurrency: number;
+    /** Max chains probed in parallel. */
+    chainConcurrency: number;
   };
   burst: {
     enabled: boolean;
@@ -50,6 +52,7 @@ export const config: Config = {
     samples: 5,
     timeoutMs: 5000,
     perChainConcurrency: 8,
+    chainConcurrency: 4,
   },
   burst: {
     enabled: true,
