@@ -13,7 +13,6 @@ export type ErrorKind =
   | 'timeout'
   | 'rate_limit'
   | 'rpc_error'
-  | 'sync'
   | 'wrong_chain'
   | 'network'
   | null;
