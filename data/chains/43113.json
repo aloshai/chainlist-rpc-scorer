@@ -1,7 +1,7 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-06-08T23:34:47.558Z",
+  "updatedAt": "2026-06-09T00:46:31.322Z",
   "rpcs": [
     {
       "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 16,
-        "p95": 35
+        "p50": 12,
+        "p95": 197
       },
       "blockLag": 0,
       "rateLimit": {
@@ -31,7 +31,7 @@
       "alive": true,
       "latencyMs": {
         "p50": 38,
-        "p95": 39
+        "p95": 40
       },
       "blockLag": 0,
       "rateLimit": {
@@ -47,11 +47,11 @@
     },
     {
       "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 98.8,
+      "score": 99.2,
       "alive": true,
       "latencyMs": {
-        "p50": 148,
-        "p95": 186
+        "p50": 135,
+        "p95": 276
       },
       "blockLag": 0,
       "rateLimit": {
@@ -59,11 +59,32 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 97,
+        "latency": 98,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
+      "tracking": "limited",
+      "score": 67.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 239,
+        "p95": 272
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 93,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/fuji/public",
@@ -94,21 +115,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://public.stackup.sh/api/v1/node/avalanche-fuji",
