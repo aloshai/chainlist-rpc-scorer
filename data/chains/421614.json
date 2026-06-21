@@ -1,16 +1,16 @@
 {
   "chainId": 421614,
   "name": "Arbitrum Sepolia",
-  "updatedAt": "2026-06-21T14:50:29.957Z",
+  "updatedAt": "2026-06-21T15:36:35.038Z",
   "rpcs": [
     {
       "url": "https://arbitrum-sepolia-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 99.6,
+      "score": 98.4,
       "alive": true,
       "latencyMs": {
-        "p50": 116,
-        "p95": 531
+        "p50": 177,
+        "p95": 606
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,8 +18,28 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 99,
+        "latency": 96,
         "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://arbitrum-sepolia-rpc.publicnode.com",
+      "score": 91,
+      "alive": true,
+      "latencyMs": {
+        "p50": 47,
+        "p95": 155
+      },
+      "blockLag": 3,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": null
@@ -27,50 +47,10 @@
     {
       "url": "https://arbitrum-sepolia.drpc.org",
       "tracking": "none",
-      "score": 88,
-      "alive": true,
-      "latencyMs": {
-        "p50": 34,
-        "p95": 41
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://arbitrum-sepolia-rpc.publicnode.com",
-      "score": 88,
-      "alive": true,
-      "latencyMs": {
-        "p50": 14,
-        "p95": 33
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://sepolia-rollup.arbitrum.io/rpc",
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 26,
+        "p50": 19,
         "p95": 31
       },
       "blockLag": 5,
@@ -88,21 +68,62 @@
     {
       "url": "https://arbitrum-sepolia.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 75.1,
+      "score": 82.9,
       "alive": true,
       "latencyMs": {
-        "p50": 14,
-        "p95": 89
+        "p50": 69,
+        "p95": 277
       },
-      "blockLag": 5,
+      "blockLag": 4,
       "rateLimit": {
-        "sustainableRps": 20,
+        "sustainableRps": 25,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 50,
-        "rateLimit": 67
+        "freshness": 60,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "score": 73,
+      "alive": true,
+      "latencyMs": {
+        "p50": 25,
+        "p95": 37
+      },
+      "blockLag": 9,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 10,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://api.zan.top/arb-sepolia",
+      "tracking": "limited",
+      "score": 61.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 236,
+        "p95": 245
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 93,
+        "freshness": 80,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -135,21 +156,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://api.zan.top/arb-sepolia",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://arbitrum-sepolia.api.onfinality.io/public",
