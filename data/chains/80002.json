@@ -1,86 +1,86 @@
 {
   "chainId": 80002,
   "name": "Amoy",
-  "updatedAt": "2026-06-24T22:30:06.592Z",
+  "updatedAt": "2026-06-24T22:56:36.477Z",
   "rpcs": [
     {
       "url": "https://polygon-amoy.drpc.org",
       "tracking": "none",
-      "score": 94,
+      "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 60,
-        "p95": 65
+        "p50": 40,
+        "p95": 43
       },
-      "blockLag": 2,
+      "blockLag": 4,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 80,
+        "freshness": 60,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
       "url": "https://polygon-amoy-bor-rpc.publicnode.com",
-      "score": 94,
+      "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 107,
-        "p95": 323
+        "p50": 25,
+        "p95": 46
       },
-      "blockLag": 2,
+      "blockLag": 4,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 80,
+        "freshness": 60,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
       "url": "https://rpc-amoy.polygon.technology",
-      "score": 93.2,
+      "score": 82.9,
       "alive": true,
       "latencyMs": {
-        "p50": 145,
-        "p95": 160
+        "p50": 98,
+        "p95": 108
       },
-      "blockLag": 2,
+      "blockLag": 4,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 25,
+        "throttled": true
       },
       "subScores": {
-        "latency": 98,
-        "freshness": 80,
-        "rateLimit": 100
+        "latency": 100,
+        "freshness": 60,
+        "rateLimit": 83
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://polygon-amoy.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 83.3,
+      "score": 77.7,
       "alive": true,
       "latencyMs": {
-        "p50": 147,
-        "p95": 304
+        "p50": 116,
+        "p95": 261
       },
-      "blockLag": 2,
+      "blockLag": 4,
       "rateLimit": {
         "sustainableRps": 20,
         "throttled": true
       },
       "subScores": {
-        "latency": 98,
-        "freshness": 80,
+        "latency": 99,
+        "freshness": 60,
         "rateLimit": 67
       },
       "errorKind": "rate_limit"
@@ -88,20 +88,41 @@
     {
       "url": "https://polygon-amoy.api.onfinality.io/public",
       "tracking": "limited",
-      "score": 62.4,
+      "score": 65.9,
       "alive": true,
       "latencyMs": {
-        "p50": 459,
-        "p95": 1011
+        "p50": 536,
+        "p95": 2630
       },
       "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 5,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 77,
+        "freshness": 100,
+        "rateLimit": 17
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/polygon-amoy",
+      "tracking": "limited",
+      "score": 55.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 237,
+        "p95": 237
+      },
+      "blockLag": 4,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 81,
-        "freshness": 100,
+        "latency": 93,
+        "freshness": 60,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -150,21 +171,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://api.zan.top/polygon-amoy",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://polygon-amoy-public.nodies.app",
