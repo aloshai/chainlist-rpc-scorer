@@ -1,16 +1,16 @@
 {
   "chainId": 100,
   "name": "Gnosis",
-  "updatedAt": "2026-06-28T20:28:46.895Z",
+  "updatedAt": "2026-06-28T20:53:15.830Z",
   "rpcs": [
     {
-      "url": "https://gnosis.drpc.org",
+      "url": "https://gnosis-rpc.publicnode.com",
       "tracking": "none",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 23,
-        "p95": 33
+        "p50": 40,
+        "p95": 377
       },
       "blockLag": 0,
       "rateLimit": {
@@ -27,11 +27,11 @@
     {
       "url": "https://rpc.gnosis.gateway.fm",
       "tracking": "yes",
-      "score": 98.4,
+      "score": 98.8,
       "alive": true,
       "latencyMs": {
-        "p50": 177,
-        "p95": 239
+        "p50": 152,
+        "p95": 573
       },
       "blockLag": 0,
       "rateLimit": {
@@ -39,7 +39,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 97,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -48,11 +48,11 @@
     {
       "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
       "tracking": "yes",
-      "score": 98.4,
+      "score": 98.8,
       "alive": true,
       "latencyMs": {
-        "p50": 185,
-        "p95": 256
+        "p50": 152,
+        "p95": 482
       },
       "blockLag": 0,
       "rateLimit": {
@@ -60,28 +60,49 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 97,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://rpc.gnosischain.com",
-      "score": 98.4,
+      "url": "https://gnosis.drpc.org",
+      "tracking": "none",
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 181,
-        "p95": 275
+        "p50": 23,
+        "p95": 39
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
-        "freshness": 100,
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "score": 95.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 149,
+        "p95": 582
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 97,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -89,11 +110,11 @@
     {
       "url": "https://gnosis.api.pocket.network",
       "tracking": "none",
-      "score": 96,
+      "score": 92.8,
       "alive": true,
       "latencyMs": {
-        "p50": 286,
-        "p95": 846
+        "p50": 451,
+        "p95": 821
       },
       "blockLag": 0,
       "rateLimit": {
@@ -101,7 +122,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 90,
+        "latency": 82,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -110,42 +131,21 @@
     {
       "url": "https://public-gno-mainnet.fastnode.io",
       "tracking": "none",
-      "score": 77.9,
+      "score": 74.3,
       "alive": true,
       "latencyMs": {
-        "p50": 188,
-        "p95": 190
+        "p50": 139,
+        "p95": 156
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 10,
+        "sustainableRps": 5,
         "throttled": true
       },
       "subScores": {
-        "latency": 95,
+        "latency": 98,
         "freshness": 100,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://gnosis.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 70,
-      "alive": true,
-      "latencyMs": {
-        "p50": 66,
-        "p95": 66
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 0
+        "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
@@ -163,21 +163,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://gnosis-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://1rpc.io/gnosis",
@@ -223,6 +208,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://gnosis.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://gnosis.therpc.io",
@@ -351,7 +351,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "timeout"
     }
   ]
 }
