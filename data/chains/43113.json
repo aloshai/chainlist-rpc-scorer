@@ -1,7 +1,7 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-07-01T09:51:40.380Z",
+  "updatedAt": "2026-07-01T11:08:06.254Z",
   "rpcs": [
     {
       "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 15,
-        "p95": 275
+        "p50": 84,
+        "p95": 99
       },
       "blockLag": 0,
       "rateLimit": {
@@ -27,11 +27,31 @@
     {
       "url": "https://avalanche-fuji.drpc.org",
       "tracking": "none",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 20,
+        "p95": 20
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://api.avax-test.network/ext/bc/C/rpc",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 33,
-        "p95": 34
+        "p50": 85,
+        "p95": 127
       },
       "blockLag": 1,
       "rateLimit": {
@@ -46,42 +66,22 @@
       "errorKind": null
     },
     {
-      "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 94,
-      "alive": true,
-      "latencyMs": {
-        "p50": 22,
-        "p95": 241
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
       "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
       "tracking": "limited",
-      "score": 60.8,
+      "score": 65.4,
       "alive": true,
       "latencyMs": {
-        "p50": 250,
-        "p95": 268
+        "p50": 179,
+        "p95": 179
       },
-      "blockLag": 2,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 92,
-        "freshness": 80,
+        "latency": 96,
+        "freshness": 90,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -144,7 +144,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "timeout"
+      "errorKind": "network"
     },
     {
       "url": "https://avalanchetestapi.terminet.io/ext/bc/C/rpc",
