@@ -1,40 +1,19 @@
 {
   "chainId": 250,
   "name": "Fantom Opera",
-  "updatedAt": "2026-07-02T18:05:55.373Z",
+  "updatedAt": "2026-07-02T19:00:17.003Z",
   "rpcs": [
-    {
-      "url": "https://fantom.drpc.org",
-      "tracking": "none",
-      "score": 100,
-      "alive": true,
-      "latencyMs": {
-        "p50": 33,
-        "p95": 35
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
     {
       "url": "https://rpcapi.fantom.network",
       "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 115,
-        "p95": 133
+        "p50": 110,
+        "p95": 112
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 30,
+        "sustainableRps": 35,
         "throttled": true
       },
       "subScores": {
@@ -49,12 +28,12 @@
       "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 112,
-        "p95": 118
+        "p50": 117,
+        "p95": 122
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 30,
+        "sustainableRps": 35,
         "throttled": true
       },
       "subScores": {
@@ -69,12 +48,32 @@
       "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 112,
-        "p95": 117
+        "p50": 116,
+        "p95": 119
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 30,
+        "sustainableRps": 35,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://rpc3.fantom.network",
+      "score": 99.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 111,
+        "p95": 120
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 35,
         "throttled": true
       },
       "subScores": {
@@ -87,11 +86,11 @@
     {
       "url": "https://fantom.api.pocket.network",
       "tracking": "none",
-      "score": 99.2,
+      "score": 96,
       "alive": true,
       "latencyMs": {
-        "p50": 130,
-        "p95": 478
+        "p50": 293,
+        "p95": 1157
       },
       "blockLag": 0,
       "rateLimit": {
@@ -99,29 +98,93 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
+        "latency": 90,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://rpc3.fantom.network",
-      "score": 94.5,
+      "url": "https://fantom.drpc.org",
+      "tracking": "none",
+      "score": 91,
       "alive": true,
       "latencyMs": {
-        "p50": 118,
-        "p95": 132
+        "p50": 108,
+        "p95": 133
+      },
+      "blockLag": 3,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 70,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://fantom.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 107,
+        "p95": 385
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 25,
+        "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
+        "latency": 100,
         "freshness": 100,
-        "rateLimit": 83
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://fantom-mainnet.gateway.tatum.io",
+      "tracking": "yes",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 20,
+        "p95": 20
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://fantom-public.nodies.app",
+      "tracking": "limited",
+      "score": 68,
+      "alive": true,
+      "latencyMs": {
+        "p50": 197,
+        "p95": 199
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 95,
+        "freshness": 100,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -141,27 +204,6 @@
       },
       "subScores": {
         "latency": 93,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://fantom.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 64.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 359,
-        "p95": 359
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 86,
         "freshness": 100,
         "rateLimit": 0
       },
@@ -243,21 +285,6 @@
       "errorKind": "network"
     },
     {
-      "url": "https://fantom-public.nodies.app",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://fantom-mainnet.public.blastapi.io",
       "tracking": "limited",
       "score": 0,
@@ -316,21 +343,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://fantom-mainnet.gateway.tatum.io",
-      "tracking": "yes",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.ftm.tools",
