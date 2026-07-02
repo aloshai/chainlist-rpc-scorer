@@ -1,7 +1,7 @@
 {
   "chainId": 10,
   "name": "OP Mainnet",
-  "updatedAt": "2026-07-02T10:22:29.401Z",
+  "updatedAt": "2026-07-02T11:22:01.169Z",
   "rpcs": [
     {
       "url": "https://optimism.rpc.sentio.xyz",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 85,
-        "p95": 88
+        "p50": 88,
+        "p95": 92
       },
       "blockLag": 0,
       "rateLimit": {
@@ -31,7 +31,7 @@
       "alive": true,
       "latencyMs": {
         "p50": 17,
-        "p95": 668
+        "p95": 909
       },
       "blockLag": 2,
       "rateLimit": {
@@ -51,28 +51,28 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 17,
-        "p95": 459
+        "p50": 19,
+        "p95": 312
       },
       "blockLag": 2,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 35,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 80,
         "rateLimit": 100
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://mainnet.optimism.io",
-      "score": 93.6,
+      "score": 88.4,
       "alive": true,
       "latencyMs": {
-        "p50": 120,
-        "p95": 233
+        "p50": 357,
+        "p95": 944
       },
       "blockLag": 2,
       "rateLimit": {
@@ -80,11 +80,32 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 99,
+        "latency": 86,
         "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://optimism.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 79,
+      "alive": true,
+      "latencyMs": {
+        "p50": 26,
+        "p95": 945
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 15,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
+        "rateLimit": 50
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://gateway.tenderly.co/public/optimism",
@@ -92,8 +113,8 @@
       "score": 79,
       "alive": true,
       "latencyMs": {
-        "p50": 19,
-        "p95": 392
+        "p50": 20,
+        "p95": 308
       },
       "blockLag": 2,
       "rateLimit": {
@@ -129,55 +150,13 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://optimism.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 73.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 28,
-        "p95": 738
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://go.getblock.io/e8a75f8dcf614861becfbcb185be6eb4",
-      "tracking": "yes",
-      "score": 67,
-      "alive": true,
-      "latencyMs": {
-        "p50": 91,
-        "p95": 91
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://rpc.nodeflare.app/op/public",
       "tracking": "none",
-      "score": 58.8,
+      "score": 59.6,
       "alive": true,
       "latencyMs": {
-        "p50": 345,
-        "p95": 881
+        "p50": 313,
+        "p95": 1413
       },
       "blockLag": 2,
       "rateLimit": {
@@ -185,7 +164,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 87,
+        "latency": 89,
         "freshness": 80,
         "rateLimit": 0
       },
@@ -477,6 +456,21 @@
       "errorKind": "rate_limit"
     },
     {
+      "url": "https://go.getblock.io/e8a75f8dcf614861becfbcb185be6eb4",
+      "tracking": "yes",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://rpc.buildbear.io/esquivelfabian",
       "tracking": "yes",
       "score": 0,
@@ -504,7 +498,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "rate_limit"
+      "errorKind": "network"
     }
   ]
 }
