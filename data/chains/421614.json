@@ -1,16 +1,16 @@
 {
   "chainId": 421614,
   "name": "Arbitrum Sepolia",
-  "updatedAt": "2026-07-03T20:51:07.910Z",
+  "updatedAt": "2026-07-03T21:26:21.699Z",
   "rpcs": [
     {
       "url": "https://arbitrum-sepolia-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 98.4,
+      "score": 98.8,
       "alive": true,
       "latencyMs": {
-        "p50": 177,
-        "p95": 771
+        "p50": 160,
+        "p95": 566
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,7 +18,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 97,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -29,8 +29,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 90,
-        "p95": 125
+        "p50": 63,
+        "p95": 99
       },
       "blockLag": 5,
       "rateLimit": {
@@ -47,33 +47,75 @@
     {
       "url": "https://arbitrum-sepolia.drpc.org",
       "tracking": "none",
-      "score": 79,
+      "score": 82,
       "alive": true,
       "latencyMs": {
-        "p50": 28,
-        "p95": 32
+        "p50": 26,
+        "p95": 31
       },
-      "blockLag": 7,
+      "blockLag": 6,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 30,
+        "freshness": 40,
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://arbitrum-sepolia.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 75.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 61,
+        "p95": 232
+      },
+      "blockLag": 5,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 50,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://arbitrum-sepolia.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 72.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 115,
+        "p95": 177
+      },
+      "blockLag": 4,
+      "rateLimit": {
+        "sustainableRps": 15,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 60,
+        "rateLimit": 50
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://sepolia-rollup.arbitrum.io/rpc",
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 89,
-        "p95": 100
+        "p50": 33,
+        "p95": 49
       },
-      "blockLag": 22,
+      "blockLag": 10,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -84,48 +126,6 @@
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://arbitrum-sepolia.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 67,
-      "alive": true,
-      "latencyMs": {
-        "p50": 74,
-        "p95": 163
-      },
-      "blockLag": 6,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 40,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.zan.top/arb-sepolia",
-      "tracking": "limited",
-      "score": 53,
-      "alive": true,
-      "latencyMs": {
-        "p50": 196,
-        "p95": 197
-      },
-      "blockLag": 5,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 95,
-        "freshness": 50,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/arbitrum/sepolia/public",
@@ -158,7 +158,7 @@
       "errorKind": "network"
     },
     {
-      "url": "https://arbitrum-sepolia.api.onfinality.io/public",
+      "url": "https://api.zan.top/arb-sepolia",
       "tracking": "limited",
       "score": 0,
       "alive": false,
