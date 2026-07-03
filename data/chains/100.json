@@ -1,7 +1,7 @@
 {
   "chainId": 100,
   "name": "Gnosis",
-  "updatedAt": "2026-07-03T19:32:35.531Z",
+  "updatedAt": "2026-07-03T20:26:52.848Z",
   "rpcs": [
     {
       "url": "https://gnosis.drpc.org",
@@ -9,8 +9,8 @@
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 13,
-        "p95": 18
+        "p50": 51,
+        "p95": 55
       },
       "blockLag": 1,
       "rateLimit": {
@@ -30,8 +30,8 @@
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 39,
-        "p95": 61
+        "p50": 72,
+        "p95": 158
       },
       "blockLag": 1,
       "rateLimit": {
@@ -48,11 +48,11 @@
     {
       "url": "https://gnosis.api.pocket.network",
       "tracking": "none",
-      "score": 96.8,
+      "score": 96.4,
       "alive": true,
       "latencyMs": {
-        "p50": 256,
-        "p95": 649
+        "p50": 272,
+        "p95": 842
       },
       "blockLag": 0,
       "rateLimit": {
@@ -60,7 +60,89 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 92,
+        "latency": 91,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://gnosis.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 91.9,
+      "alive": true,
+      "latencyMs": {
+        "p50": 53,
+        "p95": 54
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 25,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://gnosis.oat.farm",
+      "score": 90.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 44,
+        "p95": 51
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "score": 88.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 627,
+        "p95": 691
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 72,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
+      "tracking": "yes",
+      "score": 88.4,
+      "alive": true,
+      "latencyMs": {
+        "p50": 647,
+        "p95": 1069
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 71,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -69,11 +151,11 @@
     {
       "url": "https://rpc.gnosis.gateway.fm",
       "tracking": "yes",
-      "score": 94.2,
+      "score": 85.8,
       "alive": true,
       "latencyMs": {
-        "p50": 242,
-        "p95": 303
+        "p50": 625,
+        "p95": 848
       },
       "blockLag": 1,
       "rateLimit": {
@@ -81,90 +163,29 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 93,
+        "latency": 72,
         "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
-      "tracking": "yes",
-      "score": 94.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 228,
-        "p95": 281
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 93,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://rpc.gnosischain.com",
-      "score": 94.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 235,
-        "p95": 452
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 93,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://gnosis.oat.farm",
-      "score": 82,
-      "alive": true,
-      "latencyMs": {
-        "p50": 48,
-        "p95": 55
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://public-gno-mainnet.fastnode.io",
       "tracking": "none",
-      "score": 71.7,
+      "score": 73.9,
       "alive": true,
       "latencyMs": {
-        "p50": 124,
-        "p95": 129
+        "p50": 162,
+        "p95": 174
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 5,
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
-        "freshness": 90,
+        "latency": 97,
+        "freshness": 100,
         "rateLimit": 17
       },
       "errorKind": "rate_limit"
@@ -197,7 +218,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "rate_limit"
+      "errorKind": "network"
     },
     {
       "url": "https://gnosis-public.nodies.app",
@@ -228,21 +249,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://gnosis.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://gnosis.therpc.io",
