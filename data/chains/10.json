@@ -1,16 +1,37 @@
 {
   "chainId": 10,
   "name": "OP Mainnet",
-  "updatedAt": "2026-07-05T15:28:07.809Z",
+  "updatedAt": "2026-07-05T15:55:18.987Z",
   "rpcs": [
+    {
+      "url": "https://optimism-rpc.publicnode.com",
+      "tracking": "none",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 15,
+        "p95": 305
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
     {
       "url": "https://optimism.rpc.sentio.xyz",
       "tracking": "limited",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 61
+        "p50": 80,
+        "p95": 83
       },
       "blockLag": 0,
       "rateLimit": {
@@ -26,11 +47,11 @@
     },
     {
       "url": "https://mainnet.optimism.io",
-      "score": 98.8,
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 154,
-        "p95": 384
+        "p50": 118,
+        "p95": 655
       },
       "blockLag": 0,
       "rateLimit": {
@@ -38,104 +59,41 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 97,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://optimism-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 97,
+      "url": "https://gateway.tenderly.co/public/optimism",
+      "tracking": "yes",
+      "score": 90.1,
       "alive": true,
       "latencyMs": {
-        "p50": 36,
-        "p95": 218
+        "p50": 12,
+        "p95": 13
       },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://optimism.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 87.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 36,
-        "p95": 289
-      },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 20,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 100,
         "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://gateway.tenderly.co/public/optimism",
-      "tracking": "yes",
-      "score": 82,
-      "alive": true,
-      "latencyMs": {
-        "p50": 47,
-        "p95": 78
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://optimism.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 76.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 45,
-        "p95": 141
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 33
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://public-op-mainnet.fastnode.io",
       "tracking": "none",
-      "score": 74.7,
+      "score": 75.1,
       "alive": true,
       "latencyMs": {
-        "p50": 121,
-        "p95": 128
+        "p50": 104,
+        "p95": 107
       },
       "blockLag": 0,
       "rateLimit": {
@@ -143,20 +101,20 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
+        "latency": 100,
         "freshness": 100,
         "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://api.zan.top/opt-mainnet",
+      "url": "https://optimism.api.onfinality.io/public",
       "tracking": "limited",
-      "score": 67.6,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 222,
-        "p95": 223
+        "p50": 99,
+        "p95": 634
       },
       "blockLag": 0,
       "rateLimit": {
@@ -164,7 +122,28 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 94,
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/opt-mainnet",
+      "tracking": "limited",
+      "score": 67.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 232,
+        "p95": 232
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 93,
         "freshness": 100,
         "rateLimit": 0
       },
@@ -173,14 +152,20 @@
     {
       "url": "https://rpc.nodeflare.app/op/public",
       "tracking": "none",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
+      "score": 65.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 328,
+        "p95": 328
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
       "subScores": {
-        "latency": 0,
-        "freshness": 0,
+        "latency": 88,
+        "freshness": 100,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -439,6 +424,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://optimism.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://optimism-mainnet.gateway.tatum.io",
