@@ -1,65 +1,24 @@
 {
   "chainId": 80002,
   "name": "Amoy",
-  "updatedAt": "2026-07-05T17:27:32.183Z",
+  "updatedAt": "2026-07-05T17:52:40.354Z",
   "rpcs": [
     {
-      "url": "https://polygon-amoy.drpc.org",
-      "tracking": "none",
-      "score": 88,
-      "alive": true,
-      "latencyMs": {
-        "p50": 36,
-        "p95": 40
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://rpc-amoy.polygon.technology",
-      "score": 88,
-      "alive": true,
-      "latencyMs": {
-        "p50": 103,
-        "p95": 122
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 30,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 100
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://polygon-amoy-bor-rpc.publicnode.com",
-      "score": 88,
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 24,
-        "p95": 176
+        "p50": 104,
+        "p95": 444
       },
-      "blockLag": 4,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 60,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
@@ -67,32 +26,73 @@
     {
       "url": "https://polygon-amoy.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 85.5,
+      "score": 92.8,
       "alive": true,
       "latencyMs": {
-        "p50": 117,
-        "p95": 276
+        "p50": 162,
+        "p95": 330
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
-        "sustainableRps": 25,
+        "sustainableRps": 30,
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
-        "freshness": 70,
-        "rateLimit": 83
+        "latency": 97,
+        "freshness": 80,
+        "rateLimit": 100
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://api.zan.top/polygon-amoy",
-      "tracking": "limited",
-      "score": 62.9,
+      "url": "https://rpc-amoy.polygon.technology",
+      "score": 92.8,
       "alive": true,
       "latencyMs": {
-        "p50": 244,
-        "p95": 302
+        "p50": 166,
+        "p95": 181
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 30,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 97,
+        "freshness": 80,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://polygon-amoy.drpc.org",
+      "tracking": "none",
+      "score": 91,
+      "alive": true,
+      "latencyMs": {
+        "p50": 19,
+        "p95": 30
+      },
+      "blockLag": 3,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 70,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://api.zan.top/polygon-amoy",
+      "tracking": "limited",
+      "score": 64.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 195,
+        "p95": 205
       },
       "blockLag": 3,
       "rateLimit": {
@@ -100,7 +100,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 92,
+        "latency": 95,
         "freshness": 70,
         "rateLimit": 17
       },
@@ -109,11 +109,11 @@
     {
       "url": "https://polygon-amoy.api.onfinality.io/public",
       "tracking": "limited",
-      "score": 62.4,
+      "score": 63.6,
       "alive": true,
       "latencyMs": {
-        "p50": 468,
-        "p95": 1121
+        "p50": 413,
+        "p95": 774
       },
       "blockLag": 0,
       "rateLimit": {
@@ -121,8 +121,29 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 81,
+        "latency": 84,
         "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://polygon-amoy-public.nodies.app",
+      "tracking": "limited",
+      "score": 63,
+      "alive": true,
+      "latencyMs": {
+        "p50": 284,
+        "p95": 285
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 90,
+        "freshness": 90,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -171,21 +192,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://polygon-amoy-public.nodies.app",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://polygon-amoy.therpc.io",
