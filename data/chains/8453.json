@@ -1,7 +1,7 @@
 {
   "chainId": 8453,
   "name": "Base",
-  "updatedAt": "2026-07-06T04:56:39.118Z",
+  "updatedAt": "2026-07-06T06:34:57.348Z",
   "rpcs": [
     {
       "url": "https://base.api.pocket.network",
@@ -10,7 +10,7 @@
       "alive": true,
       "latencyMs": {
         "p50": 235,
-        "p95": 448
+        "p95": 494
       },
       "blockLag": 0,
       "rateLimit": {
@@ -25,13 +25,13 @@
       "errorKind": null
     },
     {
-      "url": "https://base-rpc.publicnode.com",
-      "tracking": "none",
+      "url": "https://base.rpc.sentio.xyz",
+      "tracking": "limited",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 20,
-        "p95": 682
+        "p50": 80,
+        "p95": 82
       },
       "blockLag": 1,
       "rateLimit": {
@@ -50,8 +50,8 @@
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 8,
-        "p95": 44
+        "p50": 5,
+        "p95": 108
       },
       "blockLag": 1,
       "rateLimit": {
@@ -66,13 +66,13 @@
       "errorKind": null
     },
     {
-      "url": "https://base.rpc.sentio.xyz",
-      "tracking": "limited",
+      "url": "https://base-rpc.publicnode.com",
+      "tracking": "none",
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 84,
-        "p95": 87
+        "p50": 15,
+        "p95": 225
       },
       "blockLag": 2,
       "rateLimit": {
@@ -87,22 +87,22 @@
       "errorKind": null
     },
     {
-      "url": "https://gateway.tenderly.co/public/base",
-      "tracking": "yes",
-      "score": 88.9,
+      "url": "https://base.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 91.9,
       "alive": true,
       "latencyMs": {
-        "p50": 14,
-        "p95": 31
+        "p50": 28,
+        "p95": 187
       },
-      "blockLag": 2,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 25,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 80,
+        "freshness": 90,
         "rateLimit": 83
       },
       "errorKind": "rate_limit"
@@ -113,8 +113,8 @@
       "score": 87.1,
       "alive": true,
       "latencyMs": {
-        "p50": 10,
-        "p95": 15
+        "p50": 6,
+        "p95": 7
       },
       "blockLag": 1,
       "rateLimit": {
@@ -129,105 +129,84 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://base.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 76.9,
+      "url": "https://mainnet.base.org",
+      "score": 84.1,
       "alive": true,
       "latencyMs": {
-        "p50": 24,
-        "p95": 469
+        "p50": 21,
+        "p95": 419
       },
-      "blockLag": 1,
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://developer-access-mainnet.base.org",
+      "score": 84.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 26,
+        "p95": 340
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://gateway.tenderly.co/public/base",
+      "tracking": "yes",
+      "score": 73.9,
+      "alive": true,
+      "latencyMs": {
+        "p50": 17,
+        "p95": 42
+      },
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 10,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 80,
         "rateLimit": 33
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://mainnet.base.org",
-      "score": 73.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 31,
-        "p95": 501
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 33
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://developer-access-mainnet.base.org",
+      "url": "https://base.gateway.tenderly.co",
+      "tracking": "yes",
       "score": 69.1,
       "alive": true,
       "latencyMs": {
-        "p50": 26,
-        "p95": 524
+        "p50": 12,
+        "p95": 291
       },
       "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 5,
-        "throttled": false
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 80,
         "rateLimit": 17
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://base.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 64,
-      "alive": true,
-      "latencyMs": {
-        "p50": 31,
-        "p95": 937
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://base.meowrpc.com",
-      "tracking": "none",
-      "score": 62.8,
-      "alive": true,
-      "latencyMs": {
-        "p50": 159,
-        "p95": 159
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 97,
-        "freshness": 80,
-        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -248,6 +227,21 @@
     },
     {
       "url": "https://1rpc.io/base",
+      "tracking": "none",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://base.meowrpc.com",
       "tracking": "none",
       "score": 0,
       "alive": false,
