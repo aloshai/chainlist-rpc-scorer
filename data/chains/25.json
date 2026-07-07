@@ -1,15 +1,16 @@
 {
   "chainId": 25,
   "name": "Cronos Mainnet",
-  "updatedAt": "2026-07-07T07:45:48.432Z",
+  "updatedAt": "2026-07-07T09:09:14.984Z",
   "rpcs": [
     {
-      "url": "https://rpc.vvs.finance",
+      "url": "https://cronos-evm-rpc.publicnode.com",
+      "tracking": "none",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 106,
-        "p95": 129
+        "p50": 13,
+        "p95": 344
       },
       "blockLag": 0,
       "rateLimit": {
@@ -24,13 +25,33 @@
       "errorKind": null
     },
     {
-      "url": "https://cronos-evm-rpc.publicnode.com",
+      "url": "https://rpc.vvs.finance",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 81,
+        "p95": 414
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://cronos.drpc.org",
       "tracking": "none",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 88,
-        "p95": 111
+        "p50": 31,
+        "p95": 32
       },
       "blockLag": 1,
       "rateLimit": {
@@ -45,33 +66,12 @@
       "errorKind": null
     },
     {
-      "url": "https://cronos.drpc.org",
-      "tracking": "none",
-      "score": 94,
-      "alive": true,
-      "latencyMs": {
-        "p50": 22,
-        "p95": 26
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
       "url": "https://evm.cronos.org",
       "score": 91,
       "alive": true,
       "latencyMs": {
-        "p50": 84,
-        "p95": 88
+        "p50": 53,
+        "p95": 221
       },
       "blockLag": 3,
       "rateLimit": {
@@ -91,10 +91,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 36,
-        "p95": 43
+        "p50": 80,
+        "p95": 82
       },
-      "blockLag": 172,
+      "blockLag": 50,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -119,7 +119,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/mainnet/public",
