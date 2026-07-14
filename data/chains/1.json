@@ -1,7 +1,7 @@
 {
   "chainId": 1,
   "name": "Ethereum Mainnet",
-  "updatedAt": "2026-07-14T09:35:54.777Z",
+  "updatedAt": "2026-07-14T10:34:06.824Z",
   "rpcs": [
     {
       "url": "https://eth.blockrazor.xyz",
@@ -9,8 +9,29 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 77,
-        "p95": 80
+        "p50": 18,
+        "p95": 20
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://mainnet.rpc.sentio.xyz",
+      "tracking": "limited",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 79,
+        "p95": 93
       },
       "blockLag": 0,
       "rateLimit": {
@@ -31,27 +52,7 @@
       "alive": true,
       "latencyMs": {
         "p50": 18,
-        "p95": 361
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 30,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc.flashbots.net/fast",
-      "score": 100,
-      "alive": true,
-      "latencyMs": {
-        "p50": 63,
-        "p95": 698
+        "p95": 581
       },
       "blockLag": 0,
       "rateLimit": {
@@ -60,69 +61,6 @@
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://0xrpc.io/eth",
-      "tracking": "none",
-      "score": 98.8,
-      "alive": true,
-      "latencyMs": {
-        "p50": 152,
-        "p95": 455
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 97,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://ethereum-json-rpc.stakely.io",
-      "tracking": "none",
-      "score": 98.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 171,
-        "p95": 588
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://eth.api.pocket.network",
-      "tracking": "none",
-      "score": 98.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 171,
-        "p95": 684
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 96,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -131,11 +69,11 @@
     {
       "url": "https://rpc-eth.blockmachine.io",
       "tracking": "no",
-      "score": 98.4,
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 181,
-        "p95": 1228
+        "p50": 106,
+        "p95": 610
       },
       "blockLag": 0,
       "rateLimit": {
@@ -143,11 +81,73 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 100,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://rpc.flashbots.net/fast",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 17,
+        "p95": 1539
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://eth.api.pocket.network",
+      "tracking": "none",
+      "score": 99.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 128,
+        "p95": 685
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://ethereum-json-rpc.stakely.io",
+      "tracking": "none",
+      "score": 97.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 224,
+        "p95": 424
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 35,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 93,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://eth.drpc.org",
@@ -155,8 +155,8 @@
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 50,
-        "p95": 71
+        "p50": 32,
+        "p95": 37
       },
       "blockLag": 1,
       "rateLimit": {
@@ -171,25 +171,25 @@
       "errorKind": null
     },
     {
-      "url": "https://mainnet.rpc.sentio.xyz",
+      "url": "https://eth-mainnet.public.blastapi.io",
       "tracking": "limited",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 56,
-        "p95": 93
+        "p50": 27,
+        "p95": 663
       },
       "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 35,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 90,
         "rateLimit": 100
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://eth.rpc.blxrbdn.com",
@@ -197,8 +197,8 @@
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 60
+        "p50": 10,
+        "p95": 24
       },
       "blockLag": 1,
       "rateLimit": {
@@ -213,33 +213,34 @@
       "errorKind": null
     },
     {
-      "url": "https://eth-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
-      "score": 95,
+      "url": "https://mainnet.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 197,
-        "p95": 446
+        "p50": 16,
+        "p95": 565
       },
       "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 35,
+        "throttled": true
       },
       "subScores": {
-        "latency": 95,
+        "latency": 100,
         "freshness": 90,
         "rateLimit": 100
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
-      "url": "https://ethereum.public.blockpi.network/v1/rpc/public",
-      "tracking": "limited",
-      "score": 94.6,
+      "url": "https://rpc.eth.gateway.fm",
+      "tracking": "yes",
+      "score": 96.6,
       "alive": true,
       "latencyMs": {
-        "p50": 216,
-        "p95": 1229
+        "p50": 110,
+        "p95": 625
       },
       "blockLag": 1,
       "rateLimit": {
@@ -247,11 +248,31 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 94,
+        "latency": 99,
         "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://eth-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
+      "score": 96.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 135,
+        "p95": 608
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 98,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
     },
     {
       "url": "https://ethereum-rpc.publicnode.com",
@@ -259,8 +280,8 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 85,
-        "p95": 1790
+        "p50": 18,
+        "p95": 2524
       },
       "blockLag": 2,
       "rateLimit": {
@@ -280,8 +301,8 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 59,
-        "p95": 1319
+        "p50": 18,
+        "p95": 1374
       },
       "blockLag": 2,
       "rateLimit": {
@@ -301,8 +322,8 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 65,
-        "p95": 65
+        "p50": 8,
+        "p95": 8
       },
       "blockLag": 2,
       "rateLimit": {
@@ -317,55 +338,13 @@
       "errorKind": null
     },
     {
-      "url": "https://eth-mainnet.public.blastapi.io",
-      "tracking": "limited",
-      "score": 91.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 92,
-        "p95": 798
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 25,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 83
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://mainnet.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 91.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 73,
-        "p95": 205
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 25,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 83
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://rpc.mevblocker.io",
       "tracking": "none",
-      "score": 90,
+      "score": 91.6,
       "alive": true,
       "latencyMs": {
-        "p50": 296,
-        "p95": 1601
+        "p50": 207,
+        "p95": 2796
       },
       "blockLag": 2,
       "rateLimit": {
@@ -373,9 +352,72 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 90,
+        "latency": 94,
         "freshness": 80,
         "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://ethereum.public.blockpi.network/v1/rpc/public",
+      "tracking": "limited",
+      "score": 91.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 134,
+        "p95": 1758
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 25,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 98,
+        "freshness": 90,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://public-eth.nownodes.io",
+      "tracking": "yes",
+      "score": 87.3,
+      "alive": true,
+      "latencyMs": {
+        "p50": 239,
+        "p95": 249
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 93,
+        "freshness": 100,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://gateway.tenderly.co/public/mainnet",
+      "tracking": "yes",
+      "score": 87.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 11,
+        "p95": 23
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 67
       },
       "errorKind": "rate_limit"
     },
@@ -385,8 +427,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 64,
-        "p95": 67
+        "p50": 10,
+        "p95": 17
       },
       "blockLag": 0,
       "rateLimit": {
@@ -406,8 +448,8 @@
       "score": 84.1,
       "alive": true,
       "latencyMs": {
-        "p50": 59,
-        "p95": 61
+        "p50": 6,
+        "p95": 6
       },
       "blockLag": 2,
       "rateLimit": {
@@ -422,55 +464,34 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://rpc.eth.gateway.fm",
-      "tracking": "yes",
-      "score": 80.8,
+      "url": "https://0xrpc.io/eth",
+      "tracking": "none",
+      "score": 78.3,
       "alive": true,
       "latencyMs": {
-        "p50": 161,
-        "p95": 551
+        "p50": 176,
+        "p95": 776
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
+        "sustainableRps": 10,
+        "throttled": false
       },
       "subScores": {
-        "latency": 97,
-        "freshness": 90,
-        "rateLimit": 50
+        "latency": 96,
+        "freshness": 100,
+        "rateLimit": 33
       },
-      "errorKind": "rate_limit"
+      "errorKind": null
     },
     {
       "url": "https://uk.rpc.blxrbdn.com",
       "tracking": "yes",
-      "score": 79,
-      "alive": true,
-      "latencyMs": {
-        "p50": 60,
-        "p95": 70
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://gateway.tenderly.co/public/mainnet",
-      "tracking": "yes",
       "score": 76.9,
       "alive": true,
       "latencyMs": {
-        "p50": 70,
-        "p95": 199
+        "p50": 6,
+        "p95": 6
       },
       "blockLag": 1,
       "rateLimit": {
@@ -485,169 +506,85 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://1rpc.io/eth",
-      "tracking": "none",
-      "score": 75.7,
-      "alive": true,
-      "latencyMs": {
-        "p50": 493,
-        "p95": 1572
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 20,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 79,
-        "freshness": 80,
-        "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api-ethereum-mainnet-reth.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "tracking": "limited",
-      "score": 70,
-      "alive": true,
-      "latencyMs": {
-        "p50": 36,
-        "p95": 42
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://eth-mainnet.g.alchemy.com/v2/demo",
+      "url": "https://singapore.rpc.blxrbdn.com",
       "tracking": "yes",
-      "score": 67,
+      "score": 76.9,
       "alive": true,
       "latencyMs": {
-        "p50": 34,
-        "p95": 34
+        "p50": 6,
+        "p95": 7
       },
       "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 0,
+        "sustainableRps": 10,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 90,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://public-eth.nownodes.io",
-      "tracking": "yes",
-      "score": 66,
-      "alive": true,
-      "latencyMs": {
-        "p50": 282,
-        "p95": 288
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 90,
-        "freshness": 100,
-        "rateLimit": 0
+        "rateLimit": 33
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://api.zan.top/eth-mainnet",
       "tracking": "limited",
-      "score": 65,
+      "score": 72.3,
       "alive": true,
       "latencyMs": {
-        "p50": 193,
-        "p95": 954
+        "p50": 231,
+        "p95": 235
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 0,
+        "sustainableRps": 5,
         "throttled": false
       },
       "subScores": {
-        "latency": 95,
-        "freshness": 90,
-        "rateLimit": 0
+        "latency": 93,
+        "freshness": 100,
+        "rateLimit": 17
       },
       "errorKind": null
     },
     {
-      "url": "https://singapore.rpc.blxrbdn.com",
-      "tracking": "yes",
-      "score": 64,
-      "alive": true,
-      "latencyMs": {
-        "p50": 91,
-        "p95": 106
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://eth.meowrpc.com",
+      "url": "https://1rpc.io/eth",
       "tracking": "none",
-      "score": 63.4,
+      "score": 57.2,
       "alive": true,
       "latencyMs": {
-        "p50": 276,
-        "p95": 276
+        "p50": 1002,
+        "p95": 2783
       },
-      "blockLag": 1,
+      "blockLag": 3,
       "rateLimit": {
-        "sustainableRps": 0,
+        "sustainableRps": 15,
         "throttled": true
       },
       "subScores": {
-        "latency": 91,
-        "freshness": 90,
-        "rateLimit": 0
+        "latency": 53,
+        "freshness": 70,
+        "rateLimit": 50
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://eth.merkle.io",
       "tracking": "none",
-      "score": 62.6,
+      "score": 55.6,
       "alive": true,
       "latencyMs": {
-        "p50": 311,
-        "p95": 311
+        "p50": 787,
+        "p95": 787
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 89,
-        "freshness": 90,
+        "latency": 64,
+        "freshness": 100,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -655,14 +592,20 @@
     {
       "url": "https://rpc.nodeflare.app/eth/public",
       "tracking": "none",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
+      "score": 24,
+      "alive": true,
+      "latencyMs": {
+        "p50": 2671,
+        "p95": 2671
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
       "subScores": {
         "latency": 0,
-        "freshness": 0,
+        "freshness": 80,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -726,6 +669,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://eth.meowrpc.com",
+      "tracking": "none",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.lokibuilder.xyz/wallet",
@@ -983,6 +941,21 @@
       "errorKind": "network"
     },
     {
+      "url": "https://api-ethereum-mainnet-reth.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://rpc.swiftnodes.io/rpc/eth",
       "tracking": "limited",
       "score": 0,
@@ -1056,6 +1029,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://eth-mainnet.g.alchemy.com/v2/demo",
+      "tracking": "yes",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.chain49.com/ethereum?api_key=14d1a8b86d8a4b4797938332394203dc",
