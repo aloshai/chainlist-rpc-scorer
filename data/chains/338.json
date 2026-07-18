@@ -1,47 +1,68 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-07-18T16:47:53.572Z",
+  "updatedAt": "2026-07-18T17:21:38.224Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
-      "score": 82.4,
+      "score": 93,
       "alive": true,
       "latencyMs": {
-        "p50": 936,
-        "p95": 1079
+        "p50": 290,
+        "p95": 347
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 56,
-        "freshness": 100,
+        "latency": 90,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
       "url": "https://cronos-testnet.drpc.org",
-      "score": 73,
+      "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 19,
-        "p95": 24
+        "p50": 28,
+        "p95": 30
       },
-      "blockLag": 9,
+      "blockLag": 5,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 10,
+        "freshness": 50,
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://cro-testnet.gateway.tatum.io",
+      "tracking": "yes",
+      "score": 60.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 534,
+        "p95": 780
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 77,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/testnet/public",
@@ -57,21 +78,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://cro-testnet.gateway.tatum.io",
-      "tracking": "yes",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
