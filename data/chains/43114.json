@@ -1,7 +1,7 @@
 {
   "chainId": 43114,
   "name": "Avalanche C-Chain",
-  "updatedAt": "2026-07-19T19:55:03.375Z",
+  "updatedAt": "2026-07-19T20:18:37.485Z",
   "rpcs": [
     {
       "url": "https://avax.api.pocket.network",
@@ -9,8 +9,8 @@
       "score": 98.8,
       "alive": true,
       "latencyMs": {
-        "p50": 162,
-        "p95": 1104
+        "p50": 148,
+        "p95": 801
       },
       "blockLag": 0,
       "rateLimit": {
@@ -27,20 +27,41 @@
     {
       "url": "https://avalanche.rpc.sentio.xyz",
       "tracking": "limited",
-      "score": 91,
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 78,
-        "p95": 129
+        "p50": 74,
+        "p95": 78
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 80,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://avalanche-c-chain-rpc.publicnode.com",
+      "tracking": "none",
+      "score": 88,
+      "alive": true,
+      "latencyMs": {
+        "p50": 51,
+        "p95": 1000
+      },
+      "blockLag": 4,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 60,
         "rateLimit": 100
       },
       "errorKind": null
@@ -48,44 +69,23 @@
     {
       "url": "https://avalanche-mainnet.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 86.8,
+      "score": 87.2,
       "alive": true,
       "latencyMs": {
-        "p50": 149,
-        "p95": 245
+        "p50": 146,
+        "p95": 351
       },
       "blockLag": 4,
       "rateLimit": {
-        "sustainableRps": 35,
+        "sustainableRps": 30,
         "throttled": true
       },
       "subScores": {
-        "latency": 97,
+        "latency": 98,
         "freshness": 60,
         "rateLimit": 100
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://avalanche-c-chain-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 85,
-      "alive": true,
-      "latencyMs": {
-        "p50": 49,
-        "p95": 299
-      },
-      "blockLag": 5,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 50,
-        "rateLimit": 100
-      },
-      "errorKind": null
     },
     {
       "url": "https://avalanche.drpc.org",
@@ -93,8 +93,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 28,
-        "p95": 42
+        "p50": 21,
+        "p95": 23
       },
       "blockLag": 5,
       "rateLimit": {
@@ -110,20 +110,20 @@
     },
     {
       "url": "https://api.avax.network/ext/bc/C/rpc",
-      "score": 76,
+      "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 65,
-        "p95": 521
+        "p50": 69,
+        "p95": 951
       },
-      "blockLag": 8,
+      "blockLag": 5,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 20,
+        "freshness": 50,
         "rateLimit": 100
       },
       "errorKind": null
@@ -131,41 +131,20 @@
     {
       "url": "https://spectrum-01.simplystaking.xyz/avalanche-mn-rpc/ext/bc/C/rpc",
       "tracking": "yes",
-      "score": 60,
+      "score": 62.2,
       "alive": true,
       "latencyMs": {
-        "p50": 281,
-        "p95": 724
+        "p50": 335,
+        "p95": 958
       },
-      "blockLag": 2,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 90,
-        "freshness": 80,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
-      "tracking": "limited",
-      "score": 53.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 174,
-        "p95": 174
-      },
-      "blockLag": 5,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 50,
+        "latency": 88,
+        "freshness": 90,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -173,20 +152,41 @@
     {
       "url": "https://api.zan.top/avax-mainnet/ext/bc/C/rpc",
       "tracking": "limited",
-      "score": 39.2,
+      "score": 52.6,
       "alive": true,
       "latencyMs": {
-        "p50": 1270,
-        "p95": 1286
+        "p50": 205,
+        "p95": 970
       },
-      "blockLag": 2,
+      "blockLag": 5,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 38,
-        "freshness": 80,
+        "latency": 94,
+        "freshness": 50,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
+      "tracking": "limited",
+      "score": 37.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 919,
+        "p95": 919
+      },
+      "blockLag": 5,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 57,
+        "freshness": 50,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -219,7 +219,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "rate_limit"
+      "errorKind": "network"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/mainnet/public",
