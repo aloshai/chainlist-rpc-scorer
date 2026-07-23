@@ -1,15 +1,15 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-07-23T12:05:56.070Z",
+  "updatedAt": "2026-07-23T13:01:12.698Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
       "score": 95.6,
       "alive": true,
       "latencyMs": {
-        "p50": 312,
-        "p95": 944
+        "p50": 302,
+        "p95": 352
       },
       "blockLag": 0,
       "rateLimit": {
@@ -19,6 +19,26 @@
       "subScores": {
         "latency": 89,
         "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://cronos-testnet.drpc.org",
+      "score": 88,
+      "alive": true,
+      "latencyMs": {
+        "p50": 26,
+        "p95": 27
+      },
+      "blockLag": 4,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 60,
         "rateLimit": 100
       },
       "errorKind": null
@@ -52,20 +72,6 @@
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://cronos-testnet.drpc.org",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rpc_error"
     }
   ]
 }
