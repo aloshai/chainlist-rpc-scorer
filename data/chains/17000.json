@@ -1,15 +1,15 @@
 {
   "chainId": 17000,
   "name": "Holesky",
-  "updatedAt": "2026-08-05T10:19:04.309Z",
+  "updatedAt": "2026-08-05T11:17:05.231Z",
   "rpcs": [
     {
       "url": "https://holesky.drpc.org",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 18,
-        "p95": 21
+        "p50": 31,
+        "p95": 32
       },
       "blockLag": 0,
       "rateLimit": {
@@ -22,6 +22,27 @@
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/17000",
+      "tracking": "limited",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 72,
+        "p95": 72
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://public.1rpc.io/holesky",
