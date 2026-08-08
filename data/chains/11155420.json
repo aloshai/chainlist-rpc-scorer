@@ -1,15 +1,15 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-08-08T16:44:48.044Z",
+  "updatedAt": "2026-08-08T17:09:30.327Z",
   "rpcs": [
     {
       "url": "https://optimism-sepolia.drpc.org",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 19,
-        "p95": 22
+        "p50": 44,
+        "p95": 81
       },
       "blockLag": 1,
       "rateLimit": {
@@ -25,11 +25,11 @@
     },
     {
       "url": "https://sepolia.optimism.io",
-      "score": 95.2,
+      "score": 96.8,
       "alive": true,
       "latencyMs": {
-        "p50": 322,
-        "p95": 455
+        "p50": 254,
+        "p95": 659
       },
       "blockLag": 0,
       "rateLimit": {
@@ -37,8 +37,29 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 88,
+        "latency": 92,
         "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://op-sepolia-testnet.api.pocket.network",
+      "tracking": "none",
+      "score": 96.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 124,
+        "p95": 759
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -46,41 +67,26 @@
     {
       "url": "https://optimism-sepolia.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 91.9,
+      "score": 82,
       "alive": true,
       "latencyMs": {
-        "p50": 85,
-        "p95": 206
+        "p50": 20,
+        "p95": 448
       },
       "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 25,
+        "sustainableRps": 15,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 90,
-        "rateLimit": 83
+        "rateLimit": 50
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/op/sepolia/public",
-      "tracking": "none",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "network"
-    },
-    {
-      "url": "https://op-sepolia-testnet.api.pocket.network",
       "tracking": "none",
       "score": 0,
       "alive": false,
