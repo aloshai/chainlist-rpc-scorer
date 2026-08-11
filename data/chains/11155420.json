@@ -1,15 +1,36 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-08-11T16:18:44.083Z",
+  "updatedAt": "2026-08-11T16:47:59.401Z",
   "rpcs": [
+    {
+      "url": "https://op-sepolia-testnet.api.pocket.network",
+      "tracking": "none",
+      "score": 97.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 215,
+        "p95": 810
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 94,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
     {
       "url": "https://optimism-sepolia.drpc.org",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 72,
-        "p95": 79
+        "p50": 32,
+        "p95": 34
       },
       "blockLag": 1,
       "rateLimit": {
@@ -28,8 +49,8 @@
       "score": 96.4,
       "alive": true,
       "latencyMs": {
-        "p50": 280,
-        "p95": 282
+        "p50": 273,
+        "p95": 580
       },
       "blockLag": 0,
       "rateLimit": {
@@ -44,34 +65,13 @@
       "errorKind": null
     },
     {
-      "url": "https://op-sepolia-testnet.api.pocket.network",
-      "tracking": "none",
-      "score": 92,
-      "alive": true,
-      "latencyMs": {
-        "p50": 191,
-        "p95": 728
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 95,
-        "freshness": 80,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
       "url": "https://optimism-sepolia.gateway.tenderly.co",
       "tracking": "yes",
       "score": 82,
       "alive": true,
       "latencyMs": {
-        "p50": 84,
-        "p95": 156
+        "p50": 19,
+        "p95": 411
       },
       "blockLag": 1,
       "rateLimit": {
@@ -82,6 +82,27 @@
         "latency": 100,
         "freshness": 90,
         "rateLimit": 50
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/11155420",
+      "tracking": "limited",
+      "score": 67,
+      "alive": true,
+      "latencyMs": {
+        "p50": 80,
+        "p95": 80
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -99,21 +120,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/11155420",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://public.stackup.sh/api/v1/node/optimism-sepolia",
