@@ -1,15 +1,15 @@
 {
   "chainId": 17000,
   "name": "Holesky",
-  "updatedAt": "2026-08-15T22:38:27.840Z",
+  "updatedAt": "2026-08-15T23:04:35.720Z",
   "rpcs": [
     {
       "url": "https://holesky.drpc.org",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 21,
-        "p95": 21
+        "p50": 20,
+        "p95": 20
       },
       "blockLag": 0,
       "rateLimit": {
@@ -22,6 +22,27 @@
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/17000",
+      "tracking": "limited",
+      "score": 64.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 347,
+        "p95": 347
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 87,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://public.1rpc.io/holesky",
@@ -97,21 +118,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/17000",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://api.zan.top/eth-holesky",
