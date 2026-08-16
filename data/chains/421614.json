@@ -1,45 +1,45 @@
 {
   "chainId": 421614,
   "name": "Arbitrum Sepolia",
-  "updatedAt": "2026-08-16T23:04:40.899Z",
+  "updatedAt": "2026-08-16T23:36:28.786Z",
   "rpcs": [
     {
       "url": "https://arbitrum-sepolia-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 99.2,
+      "score": 90.6,
       "alive": true,
       "latencyMs": {
-        "p50": 136,
-        "p95": 538
+        "p50": 126,
+        "p95": 571
       },
-      "blockLag": 0,
+      "blockLag": 3,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
-        "freshness": 100,
+        "latency": 99,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
       "url": "https://arbitrum-sepolia-rpc.publicnode.com",
-      "score": 88,
+      "score": 79,
       "alive": true,
       "latencyMs": {
-        "p50": 12,
-        "p95": 335
+        "p50": 24,
+        "p95": 103
       },
-      "blockLag": 4,
+      "blockLag": 7,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 60,
+        "freshness": 30,
         "rateLimit": 100
       },
       "errorKind": null
@@ -47,40 +47,20 @@
     {
       "url": "https://arbitrum-sepolia.drpc.org",
       "tracking": "none",
-      "score": 79,
+      "score": 76,
       "alive": true,
       "latencyMs": {
-        "p50": 32,
-        "p95": 41
+        "p50": 65,
+        "p95": 69
       },
-      "blockLag": 7,
+      "blockLag": 8,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 30,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://sepolia-rollup.arbitrum.io/rpc",
-      "score": 79,
-      "alive": true,
-      "latencyMs": {
-        "p50": 30,
-        "p95": 36
-      },
-      "blockLag": 7,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 30,
+        "freshness": 20,
         "rateLimit": 100
       },
       "errorKind": null
@@ -88,41 +68,61 @@
     {
       "url": "https://arbitrum-sepolia.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 72.1,
+      "score": 76,
       "alive": true,
       "latencyMs": {
-        "p50": 14,
-        "p95": 43
+        "p50": 24,
+        "p95": 154
       },
-      "blockLag": 6,
+      "blockLag": 8,
       "rateLimit": {
-        "sustainableRps": 20,
+        "sustainableRps": 30,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 40,
-        "rateLimit": 67
+        "freshness": 20,
+        "rateLimit": 100
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://lb.routeme.sh/rpc/evm/421614",
-      "tracking": "limited",
-      "score": 52,
+      "url": "https://sepolia-rollup.arbitrum.io/rpc",
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 79,
-        "p95": 79
+        "p50": 52,
+        "p95": 64
       },
-      "blockLag": 6,
+      "blockLag": 11,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://api.zan.top/arb-sepolia",
+      "tracking": "limited",
+      "score": 66.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 244,
+        "p95": 907
+      },
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 100,
-        "freshness": 40,
+        "latency": 92,
+        "freshness": 100,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -143,6 +143,21 @@
       "errorKind": "network"
     },
     {
+      "url": "https://lb.routeme.sh/rpc/evm/421614",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://public.stackup.sh/api/v1/node/arbitrum-sepolia",
       "tracking": "limited",
       "score": 0,
@@ -156,21 +171,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://api.zan.top/arb-sepolia",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://arbitrum-sepolia.api.onfinality.io/public",
