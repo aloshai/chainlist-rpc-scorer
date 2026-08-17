@@ -1,16 +1,37 @@
 {
   "chainId": 10,
   "name": "OP Mainnet",
-  "updatedAt": "2026-08-17T23:05:33.681Z",
+  "updatedAt": "2026-08-17T23:37:55.401Z",
   "rpcs": [
+    {
+      "url": "https://op.api.pocket.network",
+      "tracking": "none",
+      "score": 98.4,
+      "alive": true,
+      "latencyMs": {
+        "p50": 180,
+        "p95": 1465
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 96,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
     {
       "url": "https://optimism.rpc.sentio.xyz",
       "tracking": "limited",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 73,
-        "p95": 79
+        "p50": 14,
+        "p95": 15
       },
       "blockLag": 1,
       "rateLimit": {
@@ -19,27 +40,6 @@
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://op.api.pocket.network",
-      "tracking": "none",
-      "score": 96.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 144,
-        "p95": 1075
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 98,
         "freshness": 90,
         "rateLimit": 100
       },
@@ -48,40 +48,61 @@
     {
       "url": "https://optimism-rpc.publicnode.com",
       "tracking": "none",
-      "score": 88,
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 49,
-        "p95": 1949
+        "p50": 82,
+        "p95": 479
       },
-      "blockLag": 4,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 60,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://mainnet.optimism.io",
-      "score": 86.4,
+      "url": "https://gateway.tenderly.co/public/optimism",
+      "tracking": "yes",
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 171,
-        "p95": 1651
+        "p50": 82,
+        "p95": 515
       },
-      "blockLag": 4,
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 30,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://mainnet.optimism.io",
+      "score": 92,
+      "alive": true,
+      "latencyMs": {
+        "p50": 187,
+        "p95": 366
+      },
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
-        "freshness": 60,
+        "latency": 95,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
@@ -89,105 +110,42 @@
     {
       "url": "https://optimism.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 81.1,
+      "score": 84.1,
       "alive": true,
       "latencyMs": {
-        "p50": 60,
-        "p95": 2314
+        "p50": 89,
+        "p95": 512
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 20,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 80,
         "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://gateway.tenderly.co/public/optimism",
-      "tracking": "yes",
-      "score": 81.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 63,
-        "p95": 2281
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 20,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
-        "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc-optimism.blockmachine.io",
-      "tracking": "none",
-      "score": 78.7,
-      "alive": true,
-      "latencyMs": {
-        "p50": 153,
-        "p95": 625
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 97,
-        "freshness": 100,
-        "rateLimit": 33
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://public-op-mainnet.fastnode.io",
       "tracking": "none",
-      "score": 75.7,
+      "score": 70.5,
       "alive": true,
       "latencyMs": {
-        "p50": 156,
-        "p95": 163
+        "p50": 181,
+        "p95": 187
       },
       "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 10,
+        "sustainableRps": 5,
         "throttled": true
       },
       "subScores": {
-        "latency": 97,
+        "latency": 96,
         "freshness": 90,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.zan.top/opt-mainnet",
-      "tracking": "limited",
-      "score": 58.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 206,
-        "p95": 2481
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 94,
-        "freshness": 70,
-        "rateLimit": 0
+        "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
@@ -297,6 +255,21 @@
       "errorKind": "network"
     },
     {
+      "url": "https://rpc-optimism.blockmachine.io",
+      "tracking": "none",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://lb.routeme.sh/rpc/evm/10",
       "tracking": "limited",
       "score": 0,
@@ -358,6 +331,21 @@
     },
     {
       "url": "https://optimism.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/opt-mainnet",
       "tracking": "limited",
       "score": 0,
       "alive": false,
