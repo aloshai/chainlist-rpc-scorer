@@ -1,7 +1,7 @@
 {
   "chainId": 43114,
   "name": "Avalanche C-Chain",
-  "updatedAt": "2026-08-17T13:17:25.925Z",
+  "updatedAt": "2026-08-17T13:44:42.853Z",
   "rpcs": [
     {
       "url": "https://avax.api.pocket.network",
@@ -9,8 +9,8 @@
       "score": 97.6,
       "alive": true,
       "latencyMs": {
-        "p50": 210,
-        "p95": 890
+        "p50": 207,
+        "p95": 749
       },
       "blockLag": 0,
       "rateLimit": {
@@ -25,13 +25,13 @@
       "errorKind": null
     },
     {
-      "url": "https://avalanche-c-chain-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 97,
+      "url": "https://avalanche-mainnet.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 95.8,
       "alive": true,
       "latencyMs": {
-        "p50": 80,
-        "p95": 104
+        "p50": 154,
+        "p95": 302
       },
       "blockLag": 1,
       "rateLimit": {
@@ -39,8 +39,29 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 100,
+        "latency": 97,
         "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://avalanche-c-chain-rpc.publicnode.com",
+      "tracking": "none",
+      "score": 94,
+      "alive": true,
+      "latencyMs": {
+        "p50": 68,
+        "p95": 205
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
@@ -48,44 +69,23 @@
     {
       "url": "https://avalanche.drpc.org",
       "tracking": "none",
-      "score": 97,
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 25,
-        "p95": 30
+        "p50": 53,
+        "p95": 56
       },
-      "blockLag": 1,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://avalanche-mainnet.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 95.8,
-      "alive": true,
-      "latencyMs": {
-        "p50": 154,
-        "p95": 230
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 30,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 97,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://avalanche.rpc.sentio.xyz",
@@ -93,8 +93,8 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 59,
-        "p95": 60
+        "p50": 105,
+        "p95": 106
       },
       "blockLag": 2,
       "rateLimit": {
@@ -113,8 +113,8 @@
       "score": 91,
       "alive": true,
       "latencyMs": {
-        "p50": 45,
-        "p95": 76
+        "p50": 82,
+        "p95": 185
       },
       "blockLag": 3,
       "rateLimit": {
@@ -131,21 +131,21 @@
     {
       "url": "https://spectrum-01.simplystaking.xyz/avalanche-mn-rpc/ext/bc/C/rpc",
       "tracking": "yes",
-      "score": 65.6,
+      "score": 71.1,
       "alive": true,
       "latencyMs": {
-        "p50": 315,
-        "p95": 764
+        "p50": 289,
+        "p95": 656
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 0,
+        "sustainableRps": 5,
         "throttled": true
       },
       "subScores": {
-        "latency": 89,
+        "latency": 90,
         "freshness": 100,
-        "rateLimit": 0
+        "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
@@ -155,8 +155,8 @@
       "score": 65,
       "alive": true,
       "latencyMs": {
-        "p50": 191,
-        "p95": 198
+        "p50": 196,
+        "p95": 639
       },
       "blockLag": 1,
       "rateLimit": {
@@ -171,13 +171,13 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
+      "url": "https://lb.routeme.sh/rpc/evm/43114",
       "tracking": "limited",
-      "score": 60,
+      "score": 62,
       "alive": true,
       "latencyMs": {
-        "p50": 283,
-        "p95": 283
+        "p50": 186,
+        "p95": 186
       },
       "blockLag": 2,
       "rateLimit": {
@@ -185,8 +185,29 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 90,
+        "latency": 95,
         "freshness": 80,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
+      "tracking": "limited",
+      "score": 56.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 305,
+        "p95": 305
+      },
+      "blockLag": 3,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 89,
+        "freshness": 70,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -219,7 +240,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "rate_limit"
+      "errorKind": "network"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/mainnet/public",
@@ -267,21 +288,6 @@
       "errorKind": "network"
     },
     {
-      "url": "https://lb.routeme.sh/rpc/evm/43114",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://ava-mainnet.public.blastapi.io/ext/bc/C/rpc",
       "tracking": "limited",
       "score": 0,
@@ -309,7 +315,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://public.stackup.sh/api/v1/node/avalanche-mainnet",
