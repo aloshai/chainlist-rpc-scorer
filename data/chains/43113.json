@@ -1,69 +1,90 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-08-21T00:48:03.591Z",
+  "updatedAt": "2026-08-21T01:31:30.054Z",
   "rpcs": [
     {
-      "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
+      "url": "https://avalanche-fuji.drpc.org",
       "tracking": "none",
-      "score": 100,
+      "score": 79.9,
       "alive": true,
       "latencyMs": {
-        "p50": 98,
-        "p95": 232
+        "p50": 33,
+        "p95": 40
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
+        "sustainableRps": 10,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
         "freshness": 100,
-        "rateLimit": 100
+        "rateLimit": 33
       },
       "errorKind": null
     },
     {
-      "url": "https://avalanche-fuji.drpc.org",
+      "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
       "tracking": "none",
-      "score": 100,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 28,
-        "p95": 35
+        "p50": 109,
+        "p95": 221
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
+        "sustainableRps": 0,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
         "freshness": 100,
-        "rateLimit": 100
+        "rateLimit": 0
       },
       "errorKind": null
     },
     {
       "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 100,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 88,
-        "p95": 119
+        "p50": 99,
+        "p95": 185
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
+        "sustainableRps": 0,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
         "freshness": 100,
-        "rateLimit": 100
+        "rateLimit": 0
       },
       "errorKind": null
+    },
+    {
+      "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
+      "tracking": "limited",
+      "score": 68,
+      "alive": true,
+      "latencyMs": {
+        "p50": 195,
+        "p95": 195
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 95,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/fuji/public",
@@ -109,21 +130,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://public.stackup.sh/api/v1/node/avalanche-fuji",
