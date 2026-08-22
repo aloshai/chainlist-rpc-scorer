@@ -1,7 +1,7 @@
 {
   "chainId": 11155111,
   "name": "Ethereum Sepolia",
-  "updatedAt": "2026-08-22T18:05:23.517Z",
+  "updatedAt": "2026-08-22T18:43:29.345Z",
   "rpcs": [
     {
       "url": "https://ethereum-sepolia-rpc.publicnode.com",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 98,
-        "p95": 170
+        "p50": 90,
+        "p95": 286
       },
       "blockLag": 0,
       "rateLimit": {
@@ -29,8 +29,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 68,
-        "p95": 97
+        "p50": 58,
+        "p95": 64
       },
       "blockLag": 0,
       "rateLimit": {
@@ -47,11 +47,11 @@
     {
       "url": "https://eth-sepolia-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 98,
+      "score": 98.4,
       "alive": true,
       "latencyMs": {
-        "p50": 191,
-        "p95": 990
+        "p50": 172,
+        "p95": 727
       },
       "blockLag": 0,
       "rateLimit": {
@@ -59,7 +59,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 95,
+        "latency": 96,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -71,8 +71,8 @@
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 18,
-        "p95": 20
+        "p50": 79,
+        "p95": 81
       },
       "blockLag": 1,
       "rateLimit": {
@@ -92,8 +92,8 @@
       "score": 95.8,
       "alive": true,
       "latencyMs": {
-        "p50": 162,
-        "p95": 638
+        "p50": 152,
+        "p95": 684
       },
       "blockLag": 1,
       "rateLimit": {
@@ -108,34 +108,13 @@
       "errorKind": null
     },
     {
-      "url": "https://gateway.tenderly.co/public/sepolia",
-      "tracking": "yes",
-      "score": 90.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 77,
-        "p95": 271
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 20,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://sepolia.gateway.tenderly.co",
       "tracking": "yes",
       "score": 79.9,
       "alive": true,
       "latencyMs": {
-        "p50": 75,
-        "p95": 312
+        "p50": 64,
+        "p95": 563
       },
       "blockLag": 0,
       "rateLimit": {
@@ -150,34 +129,34 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://api.zan.top/eth-sepolia",
-      "tracking": "limited",
-      "score": 68.4,
+      "url": "https://gateway.tenderly.co/public/sepolia",
+      "tracking": "yes",
+      "score": 79.9,
       "alive": true,
       "latencyMs": {
-        "p50": 176,
-        "p95": 176
+        "p50": 64,
+        "p95": 505
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": false
+        "sustainableRps": 10,
+        "throttled": true
       },
       "subScores": {
-        "latency": 96,
+        "latency": 100,
         "freshness": 100,
-        "rateLimit": 0
+        "rateLimit": 33
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
-      "url": "https://lb.routeme.sh/rpc/evm/11155111",
+      "url": "https://ethereum-sepolia-public.nodies.app",
       "tracking": "limited",
-      "score": 64,
+      "score": 66.8,
       "alive": true,
       "latencyMs": {
-        "p50": 387,
-        "p95": 436
+        "p50": 249,
+        "p95": 251
       },
       "blockLag": 0,
       "rateLimit": {
@@ -185,11 +164,53 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 85,
+        "latency": 92,
         "freshness": 100,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/11155111",
+      "tracking": "limited",
+      "score": 60.4,
+      "alive": true,
+      "latencyMs": {
+        "p50": 562,
+        "p95": 562
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 76,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/eth-sepolia",
+      "tracking": "limited",
+      "score": 53.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 883,
+        "p95": 883
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 59,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": null
     },
     {
       "url": "https://public.1rpc.io/sepolia",
@@ -280,21 +301,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://ethereum-sepolia-public.nodies.app",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://eth-testnet.4everland.org/v1/37fa9972c1b1cd5fab542c7bdd4cde2f",
