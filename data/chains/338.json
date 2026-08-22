@@ -1,44 +1,44 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-08-22T04:12:23.030Z",
+  "updatedAt": "2026-08-22T05:08:17.113Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
-      "score": 96.4,
+      "score": 86.6,
       "alive": true,
       "latencyMs": {
-        "p50": 269,
-        "p95": 912
+        "p50": 313,
+        "p95": 332
       },
-      "blockLag": 0,
+      "blockLag": 3,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 91,
-        "freshness": 100,
+        "latency": 89,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
       "url": "https://cronos-testnet.drpc.org",
-      "score": 85,
+      "score": 76,
       "alive": true,
       "latencyMs": {
-        "p50": 13,
-        "p95": 16
+        "p50": 17,
+        "p95": 18
       },
-      "blockLag": 5,
+      "blockLag": 8,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 50,
+        "freshness": 20,
         "rateLimit": 100
       },
       "errorKind": null
@@ -46,20 +46,41 @@
     {
       "url": "https://cro-testnet.gateway.tatum.io",
       "tracking": "yes",
-      "score": 61.2,
+      "score": 60.4,
       "alive": true,
       "latencyMs": {
-        "p50": 236,
-        "p95": 447
+        "p50": 549,
+        "p95": 779
       },
-      "blockLag": 2,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 93,
-        "freshness": 80,
+        "latency": 76,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/338",
+      "tracking": "limited",
+      "score": 43,
+      "alive": true,
+      "latencyMs": {
+        "p50": 393,
+        "p95": 393
+      },
+      "blockLag": 7,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 85,
+        "freshness": 30,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -78,21 +99,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/338",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
