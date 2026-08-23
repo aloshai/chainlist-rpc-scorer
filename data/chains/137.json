@@ -1,16 +1,16 @@
 {
   "chainId": 137,
   "name": "Polygon Mainnet",
-  "updatedAt": "2026-08-23T06:45:59.112Z",
+  "updatedAt": "2026-08-23T07:14:47.534Z",
   "rpcs": [
     {
       "url": "https://rpc-polygon.blockmachine.io",
       "tracking": "none",
-      "score": 97.6,
+      "score": 97.2,
       "alive": true,
       "latencyMs": {
-        "p50": 212,
-        "p95": 1265
+        "p50": 237,
+        "p95": 770
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,8 +18,29 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 94,
+        "latency": 93,
         "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://poly.api.pocket.network",
+      "tracking": "none",
+      "score": 89.4,
+      "alive": true,
+      "latencyMs": {
+        "p50": 179,
+        "p95": 1291
+      },
+      "blockLag": 3,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 96,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": null
@@ -27,44 +48,23 @@
     {
       "url": "https://rpc.private.mev-x.com/polygon",
       "tracking": "limited",
-      "score": 95.8,
+      "score": 89.4,
       "alive": true,
       "latencyMs": {
-        "p50": 159,
-        "p95": 1553
+        "p50": 178,
+        "p95": 810
       },
-      "blockLag": 1,
+      "blockLag": 3,
       "rateLimit": {
-        "sustainableRps": 35,
+        "sustainableRps": 30,
         "throttled": true
       },
       "subScores": {
-        "latency": 97,
-        "freshness": 90,
+        "latency": 96,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://poly.api.pocket.network",
-      "tracking": "none",
-      "score": 92.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 175,
-        "p95": 967
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 80,
-        "rateLimit": 100
-      },
-      "errorKind": null
     },
     {
       "url": "https://matic.rpc.sentio.xyz",
@@ -72,8 +72,8 @@
       "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 15,
-        "p95": 39
+        "p50": 20,
+        "p95": 23
       },
       "blockLag": 4,
       "rateLimit": {
@@ -93,8 +93,8 @@
       "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 78,
-        "p95": 1890
+        "p50": 96,
+        "p95": 604
       },
       "blockLag": 4,
       "rateLimit": {
@@ -111,20 +111,20 @@
     {
       "url": "https://polygon-bor-rpc.publicnode.com",
       "tracking": "none",
-      "score": 73,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 81,
-        "p95": 1677
+        "p50": 82,
+        "p95": 1481
       },
-      "blockLag": 9,
+      "blockLag": 10,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 10,
+        "freshness": 0,
         "rateLimit": 100
       },
       "errorKind": null
@@ -132,20 +132,20 @@
     {
       "url": "https://polygon.drpc.org",
       "tracking": "none",
-      "score": 73,
+      "score": 70,
       "alive": true,
       "latencyMs": {
         "p50": 45,
-        "p95": 45
+        "p95": 46
       },
-      "blockLag": 9,
+      "blockLag": 10,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 10,
+        "freshness": 0,
         "rateLimit": 100
       },
       "errorKind": null
@@ -153,32 +153,11 @@
     {
       "url": "https://polygon.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 70.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 88,
-        "p95": 1572
-      },
-      "blockLag": 8,
-      "rateLimit": {
-        "sustainableRps": 25,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 20,
-        "rateLimit": 83
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://gateway.tenderly.co/public/polygon",
-      "tracking": "yes",
       "score": 66.1,
       "alive": true,
       "latencyMs": {
-        "p50": 97,
-        "p95": 1107
+        "p50": 83,
+        "p95": 1700
       },
       "blockLag": 8,
       "rateLimit": {
@@ -193,15 +172,57 @@
       "errorKind": "rate_limit"
     },
     {
+      "url": "https://gateway.tenderly.co/public/polygon",
+      "tracking": "yes",
+      "score": 61,
+      "alive": true,
+      "latencyMs": {
+        "p50": 92,
+        "p95": 1682
+      },
+      "blockLag": 8,
+      "rateLimit": {
+        "sustainableRps": 15,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 20,
+        "rateLimit": 50
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://public.1rpc.io/matic",
       "tracking": "none",
       "score": 60.1,
       "alive": true,
       "latencyMs": {
-        "p50": 90,
-        "p95": 100
+        "p50": 83,
+        "p95": 139
       },
-      "blockLag": 12,
+      "blockLag": 11,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://rpc-mainnet.matic.quiknode.pro",
+      "tracking": "yes",
+      "score": 60.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 64,
+        "p95": 1867
+      },
+      "blockLag": 10,
       "rateLimit": {
         "sustainableRps": 20,
         "throttled": true
@@ -216,74 +237,53 @@
     {
       "url": "https://api-polygon-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "tracking": "yes",
-      "score": 50.6,
+      "score": 55.6,
       "alive": true,
       "latencyMs": {
-        "p50": 591,
-        "p95": 591
+        "p50": 223,
+        "p95": 223
       },
-      "blockLag": 3,
+      "blockLag": 4,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 74,
-        "freshness": 70,
+        "latency": 94,
+        "freshness": 60,
         "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc-mainnet.matic.quiknode.pro",
-      "tracking": "yes",
-      "score": 49.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 65,
-        "p95": 1359
-      },
-      "blockLag": 10,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 0,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.zan.top/polygon-mainnet",
-      "tracking": "limited",
-      "score": 49.5,
-      "alive": true,
-      "latencyMs": {
-        "p50": 170,
-        "p95": 171
-      },
-      "blockLag": 8,
-      "rateLimit": {
-        "sustainableRps": 5,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 20,
-        "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://polygon-mainnet.gateway.tatum.io",
       "tracking": "yes",
-      "score": 46,
+      "score": 49,
       "alive": true,
       "latencyMs": {
-        "p50": 15,
-        "p95": 18
+        "p50": 18,
+        "p95": 19
+      },
+      "blockLag": 7,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 30,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/polygon-mainnet",
+      "tracking": "limited",
+      "score": 44.4,
+      "alive": true,
+      "latencyMs": {
+        "p50": 168,
+        "p95": 171
       },
       "blockLag": 8,
       "rateLimit": {
@@ -291,7 +291,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 100,
+        "latency": 96,
         "freshness": 20,
         "rateLimit": 0
       },
@@ -300,20 +300,20 @@
     {
       "url": "https://rpc.swiftnodes.io/rpc/polygon",
       "tracking": "limited",
-      "score": 37.6,
+      "score": 30.6,
       "alive": true,
       "latencyMs": {
-        "p50": 1350,
-        "p95": 1350
+        "p50": 1821,
+        "p95": 1821
       },
-      "blockLag": 2,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 34,
-        "freshness": 80,
+        "latency": 9,
+        "freshness": 90,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
