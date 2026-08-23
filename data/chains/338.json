@@ -1,15 +1,15 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-08-23T19:37:27.974Z",
+  "updatedAt": "2026-08-23T20:04:14.777Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
-      "score": 96.8,
+      "score": 96.4,
       "alive": true,
       "latencyMs": {
-        "p50": 252,
-        "p95": 280
+        "p50": 279,
+        "p95": 929
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,7 +17,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 92,
+        "latency": 91,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -25,41 +25,62 @@
     },
     {
       "url": "https://cronos-testnet.drpc.org",
-      "score": 91,
+      "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 15,
-        "p95": 21
+        "p50": 37,
+        "p95": 39
       },
-      "blockLag": 3,
+      "blockLag": 5,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 50,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://lb.routeme.sh/rpc/evm/338",
-      "tracking": "limited",
-      "score": 58.2,
+      "url": "https://cro-testnet.gateway.tatum.io",
+      "tracking": "yes",
+      "score": 56.8,
       "alive": true,
       "latencyMs": {
-        "p50": 227,
-        "p95": 227
+        "p50": 435,
+        "p95": 439
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 93,
-        "freshness": 70,
+        "latency": 82,
+        "freshness": 80,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/338",
+      "tracking": "limited",
+      "score": 51,
+      "alive": true,
+      "latencyMs": {
+        "p50": 296,
+        "p95": 296
+      },
+      "blockLag": 5,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 90,
+        "freshness": 50,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -78,21 +99,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://cro-testnet.gateway.tatum.io",
-      "tracking": "yes",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
