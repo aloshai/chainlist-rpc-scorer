@@ -1,16 +1,16 @@
 {
   "chainId": 8453,
   "name": "Base",
-  "updatedAt": "2026-08-28T22:33:48.245Z",
+  "updatedAt": "2026-08-28T23:07:38.707Z",
   "rpcs": [
     {
-      "url": "https://base.api.pocket.network",
-      "tracking": "none",
-      "score": 99.6,
+      "url": "https://base.rpc.sentio.xyz",
+      "tracking": "limited",
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 121,
-        "p95": 1781
+        "p50": 81,
+        "p95": 92
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,7 +18,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 99,
+        "latency": 100,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -26,32 +26,53 @@
     },
     {
       "url": "https://rpc.baseazul.dev",
-      "score": 97,
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 10,
-        "p95": 118
+        "p50": 6,
+        "p95": 42
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://base.rpc.sentio.xyz",
-      "tracking": "limited",
+      "url": "https://base.api.pocket.network",
+      "tracking": "none",
+      "score": 99.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 132,
+        "p95": 604
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 98,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://base-rpc.publicnode.com",
+      "tracking": "none",
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 84,
-        "p95": 88
+        "p50": 19,
+        "p95": 366
       },
       "blockLag": 2,
       "rateLimit": {
@@ -66,55 +87,95 @@
       "errorKind": null
     },
     {
-      "url": "https://base-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 91,
+      "url": "https://base-mainnet.public.blastapi.io",
+      "tracking": "limited",
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 24,
-        "p95": 652
+        "p50": 21,
+        "p95": 461
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://base-mainnet.public.blastapi.io",
-      "tracking": "limited",
-      "score": 91,
+      "url": "https://base.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 88.9,
       "alive": true,
       "latencyMs": {
-        "p50": 33,
-        "p95": 521
+        "p50": 15,
+        "p95": 469
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 25,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
-        "rateLimit": 100
+        "freshness": 80,
+        "rateLimit": 83
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://base.rpc.blxrbdn.com",
       "tracking": "yes",
+      "score": 87.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 7,
+        "p95": 11
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://mainnet.base.org",
       "score": 84.1,
       "alive": true,
       "latencyMs": {
-        "p50": 10,
-        "p95": 14
+        "p50": 22,
+        "p95": 537
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 20,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://developer-access-mainnet.base.org",
+      "score": 84.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 22,
+        "p95": 468
       },
       "blockLag": 2,
       "rateLimit": {
@@ -131,102 +192,41 @@
     {
       "url": "https://gateway.tenderly.co/public/base",
       "tracking": "yes",
-      "score": 82.9,
+      "score": 79,
       "alive": true,
       "latencyMs": {
-        "p50": 16,
-        "p95": 18
+        "p50": 13,
+        "p95": 20
       },
-      "blockLag": 4,
+      "blockLag": 2,
       "rateLimit": {
-        "sustainableRps": 25,
+        "sustainableRps": 15,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 60,
-        "rateLimit": 83
+        "freshness": 80,
+        "rateLimit": 50
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://mainnet.base.org",
-      "score": 78.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 24,
-        "p95": 2525
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 20,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://developer-access-mainnet.base.org",
-      "score": 78.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 26,
-        "p95": 2504
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 20,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://base.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 70.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 23,
-        "p95": 621
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.zan.top/base-mainnet",
+      "url": "https://rpc.swiftnodes.io/rpc/base",
       "tracking": "limited",
-      "score": 64.2,
+      "score": 67.6,
       "alive": true,
       "latencyMs": {
-        "p50": 238,
-        "p95": 238
+        "p50": 211,
+        "p95": 211
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 93,
-        "freshness": 90,
+        "latency": 94,
+        "freshness": 100,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -234,20 +234,41 @@
     {
       "url": "https://base.meowrpc.com",
       "tracking": "none",
-      "score": 31.4,
+      "score": 52.4,
       "alive": true,
       "latencyMs": {
-        "p50": 1497,
-        "p95": 1497
+        "p50": 643,
+        "p95": 643
       },
-      "blockLag": 3,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 26,
-        "freshness": 70,
+        "latency": 71,
+        "freshness": 80,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/base-mainnet",
+      "tracking": "limited",
+      "score": 43.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 1380,
+        "p95": 1380
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 33,
+        "freshness": 100,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -479,21 +500,6 @@
     },
     {
       "url": "https://api-base-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc.swiftnodes.io/rpc/base",
       "tracking": "limited",
       "score": 0,
       "alive": false,
