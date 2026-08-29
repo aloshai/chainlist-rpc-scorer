@@ -1,15 +1,15 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-08-29T06:14:57.947Z",
+  "updatedAt": "2026-08-29T06:41:34.645Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
-      "score": 96.4,
+      "score": 81.6,
       "alive": true,
       "latencyMs": {
-        "p50": 262,
-        "p95": 291
+        "p50": 974,
+        "p95": 1244
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,31 +17,32 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 91,
+        "latency": 54,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://cronos-testnet.drpc.org",
-      "score": 88,
+      "url": "https://lb.routeme.sh/rpc/evm/338",
+      "tracking": "limited",
+      "score": 38.4,
       "alive": true,
       "latencyMs": {
-        "p50": 30,
-        "p95": 34
+        "p50": 172,
+        "p95": 172
       },
-      "blockLag": 4,
+      "blockLag": 14,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 0,
+        "throttled": true
       },
       "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 100
+        "latency": 96,
+        "freshness": 0,
+        "rateLimit": 0
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/testnet/public",
@@ -59,21 +60,6 @@
       "errorKind": "network"
     },
     {
-      "url": "https://lb.routeme.sh/rpc/evm/338",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://cro-testnet.gateway.tatum.io",
       "tracking": "yes",
       "score": 0,
@@ -87,6 +73,20 @@
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://cronos-testnet.drpc.org",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "network"
     }
   ]
 }
