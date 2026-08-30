@@ -1,16 +1,16 @@
 {
   "chainId": 10,
   "name": "OP Mainnet",
-  "updatedAt": "2026-08-30T11:07:55.713Z",
+  "updatedAt": "2026-08-30T11:34:17.524Z",
   "rpcs": [
     {
-      "url": "https://optimism.rpc.sentio.xyz",
-      "tracking": "limited",
-      "score": 100,
+      "url": "https://op.api.pocket.network",
+      "tracking": "none",
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 77,
-        "p95": 85
+        "p50": 111,
+        "p95": 873
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,29 +18,29 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 100,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://op.api.pocket.network",
-      "tracking": "none",
-      "score": 99.2,
+      "url": "https://optimism.rpc.sentio.xyz",
+      "tracking": "limited",
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 141,
-        "p95": 1153
+        "p50": 79,
+        "p95": 80
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
-        "freshness": 100,
+        "latency": 100,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -51,8 +51,8 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 59,
-        "p95": 1264
+        "p50": 16,
+        "p95": 480
       },
       "blockLag": 2,
       "rateLimit": {
@@ -67,12 +67,33 @@
       "errorKind": null
     },
     {
-      "url": "https://mainnet.optimism.io",
-      "score": 92.4,
+      "url": "https://gateway.tenderly.co/public/optimism",
+      "tracking": "yes",
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 168,
-        "p95": 611
+        "p50": 16,
+        "p95": 1320
+      },
+      "blockLag": 2,
+      "rateLimit": {
+        "sustainableRps": 30,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 80,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://mainnet.optimism.io",
+      "score": 93.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 118,
+        "p95": 440
       },
       "blockLag": 2,
       "rateLimit": {
@@ -80,20 +101,20 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 99,
         "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://gateway.tenderly.co/public/optimism",
+      "url": "https://optimism.gateway.tenderly.co",
       "tracking": "yes",
       "score": 84.1,
       "alive": true,
       "latencyMs": {
-        "p50": 60,
-        "p95": 713
+        "p50": 19,
+        "p95": 450
       },
       "blockLag": 2,
       "rateLimit": {
@@ -108,34 +129,13 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://optimism.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 79,
-      "alive": true,
-      "latencyMs": {
-        "p50": 56,
-        "p95": 719
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://public-op-mainnet.fastnode.io",
       "tracking": "none",
-      "score": 73.5,
+      "score": 74.7,
       "alive": true,
       "latencyMs": {
-        "p50": 169,
-        "p95": 192
+        "p50": 120,
+        "p95": 121
       },
       "blockLag": 0,
       "rateLimit": {
@@ -143,7 +143,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 96,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 17
       },
@@ -152,11 +152,11 @@
     {
       "url": "https://rpc.swiftnodes.io/rpc/optimism",
       "tracking": "limited",
-      "score": 66,
+      "score": 69.6,
       "alive": true,
       "latencyMs": {
-        "p50": 288,
-        "p95": 779
+        "p50": 122,
+        "p95": 122
       },
       "blockLag": 0,
       "rateLimit": {
@@ -164,29 +164,8 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 90,
+        "latency": 99,
         "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/10",
-      "tracking": "limited",
-      "score": 64,
-      "alive": true,
-      "latencyMs": {
-        "p50": 87,
-        "p95": 87
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -194,11 +173,11 @@
     {
       "url": "https://api.zan.top/opt-mainnet",
       "tracking": "limited",
-      "score": 61.6,
+      "score": 61.2,
       "alive": true,
       "latencyMs": {
-        "p50": 206,
-        "p95": 811
+        "p50": 237,
+        "p95": 898
       },
       "blockLag": 2,
       "rateLimit": {
@@ -206,7 +185,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 94,
+        "latency": 93,
         "freshness": 80,
         "rateLimit": 0
       },
@@ -320,6 +299,21 @@
     {
       "url": "https://rpc-optimism.blockmachine.io",
       "tracking": "none",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/10",
+      "tracking": "limited",
       "score": 0,
       "alive": false,
       "latencyMs": null,
