@@ -1,15 +1,36 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-09-02T15:12:53.314Z",
+  "updatedAt": "2026-09-02T15:38:29.300Z",
   "rpcs": [
     {
       "url": "https://optimism-sepolia.drpc.org",
-      "score": 100,
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 18,
-        "p95": 24
+        "p50": 51,
+        "p95": 52
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://op-sepolia-testnet.api.pocket.network",
+      "tracking": "none",
+      "score": 96,
+      "alive": true,
+      "latencyMs": {
+        "p50": 289,
+        "p95": 702
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,7 +38,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 100,
+        "latency": 90,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -25,20 +46,20 @@
     },
     {
       "url": "https://sepolia.optimism.io",
-      "score": 96.4,
+      "score": 94.2,
       "alive": true,
       "latencyMs": {
-        "p50": 269,
-        "p95": 335
+        "p50": 227,
+        "p95": 281
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 91,
-        "freshness": 100,
+        "latency": 93,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -46,44 +67,23 @@
     {
       "url": "https://optimism-sepolia.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 85,
+      "score": 82,
       "alive": true,
       "latencyMs": {
-        "p50": 75,
-        "p95": 197
+        "p50": 90,
+        "p95": 134
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 15,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
+        "freshness": 90,
         "rateLimit": 50
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://op-sepolia-testnet.api.pocket.network",
-      "tracking": "none",
-      "score": 73.5,
-      "alive": true,
-      "latencyMs": {
-        "p50": 185,
-        "p95": 731
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 5,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 100,
-        "rateLimit": 17
-      },
-      "errorKind": null
     },
     {
       "url": "https://endpoints.omniatech.io/v1/op/sepolia/public",
