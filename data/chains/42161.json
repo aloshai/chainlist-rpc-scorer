@@ -1,46 +1,46 @@
 {
   "chainId": 42161,
   "name": "Arbitrum One",
-  "updatedAt": "2026-09-04T09:43:51.912Z",
+  "updatedAt": "2026-09-04T10:17:22.633Z",
   "rpcs": [
     {
       "url": "https://rpc-arbitrum.blockmachine.io",
       "tracking": "none",
-      "score": 99.2,
+      "score": 98.8,
       "alive": true,
       "latencyMs": {
-        "p50": 145,
-        "p95": 471
+        "p50": 150,
+        "p95": 832
       },
       "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 35,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 97,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://arb-one.api.pocket.network",
+      "tracking": "none",
+      "score": 78.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 133,
+        "p95": 1607
+      },
+      "blockLag": 7,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 98,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://arb-one.api.pocket.network",
-      "tracking": "none",
-      "score": 83.8,
-      "alive": true,
-      "latencyMs": {
-        "p50": 161,
-        "p95": 980
-      },
-      "blockLag": 5,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 97,
-        "freshness": 50,
+        "freshness": 30,
         "rateLimit": 100
       },
       "errorKind": null
@@ -51,10 +51,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 16,
-        "p95": 1978
+        "p50": 19,
+        "p95": 1652
       },
-      "blockLag": 44,
+      "blockLag": 53,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -72,10 +72,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 34,
-        "p95": 44
+        "p50": 39,
+        "p95": 54
       },
-      "blockLag": 45,
+      "blockLag": 53,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -93,10 +93,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 16,
-        "p95": 1729
+        "p50": 23,
+        "p95": 2638
       },
-      "blockLag": 52,
+      "blockLag": 60,
       "rateLimit": {
         "sustainableRps": 30,
         "throttled": true
@@ -115,9 +115,9 @@
       "alive": true,
       "latencyMs": {
         "p50": 26,
-        "p95": 1592
+        "p95": 2627
       },
-      "blockLag": 52,
+      "blockLag": 60,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -135,10 +135,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 76,
+        "p50": 81,
         "p95": 83
       },
-      "blockLag": 22,
+      "blockLag": 24,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -155,10 +155,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 29,
-        "p95": 32
+        "p50": 36,
+        "p95": 38
       },
-      "blockLag": 60,
+      "blockLag": 72,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -173,34 +173,55 @@
     {
       "url": "https://42161.rpc.thirdweb.com",
       "tracking": "yes",
-      "score": 68.3,
+      "score": 66.6,
       "alive": true,
       "latencyMs": {
-        "p50": 146,
-        "p95": 277
+        "p50": 123,
+        "p95": 520
       },
-      "blockLag": 2,
+      "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 5,
+        "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 98,
-        "freshness": 80,
-        "rateLimit": 17
+        "latency": 99,
+        "freshness": 90,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://arbitrum.gateway.tenderly.co",
       "tracking": "yes",
+      "score": 64.9,
+      "alive": true,
+      "latencyMs": {
+        "p50": 36,
+        "p95": 423
+      },
+      "blockLag": 28,
+      "rateLimit": {
+        "sustainableRps": 25,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://public.1rpc.io/arb",
+      "tracking": "none",
       "score": 60.1,
       "alive": true,
       "latencyMs": {
-        "p50": 10,
-        "p95": 954
+        "p50": 53,
+        "p95": 60
       },
-      "blockLag": 18,
+      "blockLag": 81,
       "rateLimit": {
         "sustainableRps": 20,
         "throttled": true
@@ -215,63 +236,42 @@
     {
       "url": "https://public-arb-mainnet.fastnode.io",
       "tracking": "none",
-      "score": 50.7,
+      "score": 49.5,
       "alive": true,
       "latencyMs": {
-        "p50": 126,
-        "p95": 136
+        "p50": 120,
+        "p95": 127
       },
-      "blockLag": 8,
+      "blockLag": 12,
+      "rateLimit": {
+        "sustainableRps": 10,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 0,
+        "rateLimit": 33
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/arb-one",
+      "tracking": "limited",
+      "score": 42.3,
+      "alive": true,
+      "latencyMs": {
+        "p50": 239,
+        "p95": 246
+      },
+      "blockLag": 46,
       "rateLimit": {
         "sustainableRps": 5,
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
-        "freshness": 20,
-        "rateLimit": 17
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://public.1rpc.io/arb",
-      "tracking": "none",
-      "score": 48.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 401,
-        "p95": 423
-      },
-      "blockLag": 61,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 84,
+        "latency": 93,
         "freshness": 0,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc.swiftnodes.io/rpc/arbitrum",
-      "tracking": "limited",
-      "score": 45.8,
-      "alive": true,
-      "latencyMs": {
-        "p50": 258,
-        "p95": 258
-      },
-      "blockLag": 7,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 92,
-        "freshness": 30,
-        "rateLimit": 0
+        "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
@@ -281,10 +281,10 @@
       "score": 40,
       "alive": true,
       "latencyMs": {
-        "p50": 56,
-        "p95": 56
+        "p50": 51,
+        "p95": 51
       },
-      "blockLag": 60,
+      "blockLag": 71,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
@@ -297,42 +297,42 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://api.zan.top/arb-one",
-      "tracking": "limited",
-      "score": 37.2,
+      "url": "https://arbitrum.meowrpc.com",
+      "tracking": "none",
+      "score": 14.4,
       "alive": true,
       "latencyMs": {
-        "p50": 236,
-        "p95": 239
+        "p50": 1311,
+        "p95": 1311
       },
-      "blockLag": 37,
+      "blockLag": 49,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 93,
+        "latency": 36,
         "freshness": 0,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://arbitrum.meowrpc.com",
-      "tracking": "none",
-      "score": 8.4,
+      "url": "https://rpc.swiftnodes.io/rpc/arbitrum",
+      "tracking": "limited",
+      "score": 5.2,
       "alive": true,
       "latencyMs": {
-        "p50": 1601,
-        "p95": 1601
+        "p50": 1758,
+        "p95": 1758
       },
-      "blockLag": 41,
+      "blockLag": 11,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 21,
+        "latency": 13,
         "freshness": 0,
         "rateLimit": 0
       },
