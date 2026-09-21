@@ -1,16 +1,15 @@
 {
   "chainId": 84532,
   "name": "Base Sepolia Testnet",
-  "updatedAt": "2026-09-21T16:11:19.585Z",
+  "updatedAt": "2026-09-21T16:37:50.700Z",
   "rpcs": [
     {
-      "url": "https://base-testnet.api.pocket.network",
-      "tracking": "none",
-      "score": 92,
+      "url": "https://base-sepolia-rpc.publicnode.com",
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 481,
-        "p95": 3523
+        "p50": 106,
+        "p95": 289
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,7 +17,28 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 80,
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://base-testnet.api.pocket.network",
+      "tracking": "none",
+      "score": 97.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 229,
+        "p95": 935
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 93,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -27,20 +47,20 @@
     {
       "url": "https://base-sepolia.drpc.org",
       "tracking": "none",
-      "score": 91,
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 26,
-        "p95": 30
+        "p50": 47,
+        "p95": 48
       },
-      "blockLag": 3,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -48,82 +68,62 @@
     {
       "url": "https://base-sepolia.rpc.sentio.xyz",
       "tracking": "limited",
-      "score": 91,
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 74,
-        "p95": 76
+        "p50": 21,
+        "p95": 33
       },
-      "blockLag": 3,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://base-sepolia-rpc.publicnode.com",
-      "score": 91,
+      "url": "https://base-sepolia.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 90.1,
       "alive": true,
       "latencyMs": {
-        "p50": 57,
-        "p95": 83
+        "p50": 101,
+        "p95": 265
       },
-      "blockLag": 3,
+      "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 20,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
-        "rateLimit": 100
+        "freshness": 100,
+        "rateLimit": 67
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://sepolia.base.org",
-      "score": 76,
+      "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 52,
-        "p95": 90
+        "p50": 85,
+        "p95": 199
       },
-      "blockLag": 3,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 15,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 70,
+        "freshness": 100,
         "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://base-sepolia.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 70.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 73,
-        "p95": 375
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
-        "rateLimit": 33
       },
       "errorKind": "rate_limit"
     },
