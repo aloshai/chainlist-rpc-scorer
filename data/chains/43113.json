@@ -1,7 +1,7 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-09-22T03:39:58.117Z",
+  "updatedAt": "2026-09-22T04:11:51.489Z",
   "rpcs": [
     {
       "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 87,
-        "p95": 132
+        "p50": 84,
+        "p95": 234
       },
       "blockLag": 0,
       "rateLimit": {
@@ -31,7 +31,7 @@
       "alive": true,
       "latencyMs": {
         "p50": 26,
-        "p95": 29
+        "p95": 33
       },
       "blockLag": 1,
       "rateLimit": {
@@ -47,20 +47,20 @@
     },
     {
       "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 97,
+      "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 100,
-        "p95": 246
+        "p50": 97,
+        "p95": 220
       },
-      "blockLag": 1,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
@@ -68,20 +68,41 @@
     {
       "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
       "tracking": "limited",
-      "score": 56.8,
+      "score": 62,
       "alive": true,
       "latencyMs": {
-        "p50": 723,
-        "p95": 723
+        "p50": 189,
+        "p95": 191
       },
-      "blockLag": 0,
+      "blockLag": 2,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 67,
-        "freshness": 100,
+        "latency": 95,
+        "freshness": 80,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/43113",
+      "tracking": "limited",
+      "score": 60.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 406,
+        "p95": 406
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 84,
+        "freshness": 90,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -100,21 +121,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/43113",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://ava-testnet.public.blastapi.io/ext/bc/C/rpc",
