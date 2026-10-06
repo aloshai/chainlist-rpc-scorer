@@ -1,25 +1,45 @@
 {
   "chainId": 100,
   "name": "Gnosis",
-  "updatedAt": "2026-10-06T20:40:03.964Z",
+  "updatedAt": "2026-10-06T21:09:39.314Z",
   "rpcs": [
     {
-      "url": "https://gnosis.drpc.org",
-      "tracking": "none",
+      "url": "https://gnosis.oat.farm",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 26,
-        "p95": 29
+        "p50": 24,
+        "p95": 108
       },
       "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 35,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://gnosis.drpc.org",
+      "tracking": "none",
+      "score": 97,
+      "alive": true,
+      "latencyMs": {
+        "p50": 34,
+        "p95": 39
+      },
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -27,61 +47,20 @@
     {
       "url": "https://gnosis-rpc.publicnode.com",
       "tracking": "none",
-      "score": 100,
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 91,
-        "p95": 94
+        "p50": 17,
+        "p95": 409
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://gnosis.oat.farm",
-      "score": 100,
-      "alive": true,
-      "latencyMs": {
-        "p50": 66,
-        "p95": 294
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://rpc.gnosis.gateway.fm",
-      "tracking": "yes",
-      "score": 98.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 179,
-        "p95": 215
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 100,
+        "freshness": 90,
         "rateLimit": 100
       },
       "errorKind": null
@@ -89,11 +68,52 @@
     {
       "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
       "tracking": "yes",
-      "score": 98.4,
+      "score": 96.6,
       "alive": true,
       "latencyMs": {
-        "p50": 177,
-        "p95": 238
+        "p50": 111,
+        "p95": 869
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "score": 96.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 117,
+        "p95": 908
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.gnosis.gateway.fm",
+      "tracking": "yes",
+      "score": 94.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 355,
+        "p95": 908
       },
       "blockLag": 0,
       "rateLimit": {
@@ -101,7 +121,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 87,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -110,43 +130,44 @@
     {
       "url": "https://gnosis.api.pocket.network",
       "tracking": "none",
-      "score": 96,
+      "score": 86.9,
       "alive": true,
       "latencyMs": {
-        "p50": 281,
-        "p95": 663
+        "p50": 246,
+        "p95": 1207
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
+        "sustainableRps": 20,
         "throttled": false
       },
       "subScores": {
-        "latency": 90,
+        "latency": 92,
         "freshness": 100,
-        "rateLimit": 100
+        "rateLimit": 67
       },
       "errorKind": null
     },
     {
-      "url": "https://rpc.gnosischain.com",
-      "score": 89.6,
+      "url": "https://rpc.swiftnodes.io/rpc/gnosis",
+      "tracking": "limited",
+      "score": 61.2,
       "alive": true,
       "latencyMs": {
-        "p50": 596,
-        "p95": 604
+        "p50": 516,
+        "p95": 516
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 0,
+        "throttled": true
       },
       "subScores": {
-        "latency": 74,
+        "latency": 78,
         "freshness": 100,
-        "rateLimit": 100
+        "rateLimit": 0
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/gnosis/mainnet/public",
@@ -176,7 +197,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://public-gno-mainnet.fastnode.io",
@@ -267,21 +288,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://rpc.swiftnodes.io/rpc/gnosis",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://gno-mainnet.gateway.tatum.io",
