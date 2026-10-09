@@ -1,15 +1,15 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-10-09T20:40:34.482Z",
+  "updatedAt": "2026-10-09T21:09:29.639Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
-      "score": 81.2,
+      "score": 80,
       "alive": true,
       "latencyMs": {
-        "p50": 1001,
-        "p95": 1097
+        "p50": 1043,
+        "p95": 1192
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,7 +17,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 53,
+        "latency": 50,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -28,10 +28,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 74,
-        "p95": 76
+        "p50": 19,
+        "p95": 22
       },
-      "blockLag": 10,
+      "blockLag": 12,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -42,6 +42,27 @@
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/338",
+      "tracking": "limited",
+      "score": 38,
+      "alive": true,
+      "latencyMs": {
+        "p50": 186,
+        "p95": 186
+      },
+      "blockLag": 12,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 95,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/testnet/public",
@@ -57,21 +78,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/338",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://cro-testnet.gateway.tatum.io",
