@@ -1,25 +1,46 @@
 {
   "chainId": 56,
   "name": "BNB Smart Chain Mainnet",
-  "updatedAt": "2026-10-09T03:47:07.467Z",
+  "updatedAt": "2026-10-09T04:14:35.673Z",
   "rpcs": [
     {
-      "url": "https://bsc.api.pocket.network",
+      "url": "https://rpc-bsc.blockmachine.io",
       "tracking": "none",
-      "score": 99.2,
+      "score": 94.1,
       "alive": true,
       "latencyMs": {
         "p50": 139,
-        "p95": 585
+        "p95": 1288
       },
       "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 25,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 98,
+        "freshness": 100,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://bsc.api.pocket.network",
+      "tracking": "none",
+      "score": 86.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 162,
+        "p95": 1783
+      },
+      "blockLag": 4,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
-        "freshness": 100,
+        "latency": 97,
+        "freshness": 60,
         "rateLimit": 100
       },
       "errorKind": null
@@ -27,83 +48,20 @@
     {
       "url": "https://bsc.rpc.sentio.xyz",
       "tracking": "limited",
-      "score": 94,
+      "score": 76,
       "alive": true,
       "latencyMs": {
-        "p50": 77,
-        "p95": 78
+        "p50": 67,
+        "p95": 67
       },
-      "blockLag": 2,
+      "blockLag": 8,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 80,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://bsc.blockrazor.xyz",
-      "tracking": "none",
-      "score": 91,
-      "alive": true,
-      "latencyMs": {
-        "p50": 10,
-        "p95": 16
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://bsc.blockrazor.xyz/fullprivacy",
-      "tracking": "none",
-      "score": 91,
-      "alive": true,
-      "latencyMs": {
-        "p50": 32,
-        "p95": 39
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://bsc.blockrazor.xyz/maxbackrun",
-      "tracking": "none",
-      "score": 91,
-      "alive": true,
-      "latencyMs": {
-        "p50": 32,
-        "p95": 39
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 70,
+        "freshness": 20,
         "rateLimit": 100
       },
       "errorKind": null
@@ -111,20 +69,104 @@
     {
       "url": "https://bsc-rpc.publicnode.com",
       "tracking": "none",
-      "score": 85,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 11,
-        "p95": 557
+        "p50": 60,
+        "p95": 605
       },
-      "blockLag": 5,
+      "blockLag": 18,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 50,
+        "freshness": 0,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://bsc.blockrazor.xyz",
+      "tracking": "none",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 57,
+        "p95": 114
+      },
+      "blockLag": 13,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://bsc.blockrazor.xyz/fullprivacy",
+      "tracking": "none",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 59,
+        "p95": 140
+      },
+      "blockLag": 11,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://bsc.blockrazor.xyz/maxbackrun",
+      "tracking": "none",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 51,
+        "p95": 53
+      },
+      "blockLag": 11,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://bsc-mainnet.public.blastapi.io",
+      "tracking": "limited",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 69,
+        "p95": 620
+      },
+      "blockLag": 18,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
         "rateLimit": 100
       },
       "errorKind": null
@@ -132,20 +174,20 @@
     {
       "url": "https://bsc-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
       "tracking": "yes",
-      "score": 76,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 6,
-        "p95": 17
+        "p50": 35,
+        "p95": 42
       },
-      "blockLag": 8,
+      "blockLag": 24,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 20,
+        "freshness": 0,
         "rateLimit": 100
       },
       "errorKind": null
@@ -153,20 +195,20 @@
     {
       "url": "https://binance.nodereal.io",
       "tracking": "yes",
-      "score": 76,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 6,
-        "p95": 12
+        "p50": 30,
+        "p95": 32
       },
-      "blockLag": 8,
+      "blockLag": 20,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 20,
+        "freshness": 0,
         "rateLimit": 100
       },
       "errorKind": null
@@ -176,10 +218,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 5,
-        "p95": 9
+        "p50": 34,
+        "p95": 34
       },
-      "blockLag": 33,
+      "blockLag": 55,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -196,10 +238,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 7,
-        "p95": 7
+        "p50": 30,
+        "p95": 30
       },
-      "blockLag": 32,
+      "blockLag": 55,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -216,10 +258,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 5,
-        "p95": 6
+        "p50": 33,
+        "p95": 35
       },
-      "blockLag": 32,
+      "blockLag": 55,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -236,10 +278,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 7,
-        "p95": 14
+        "p50": 31,
+        "p95": 32
       },
-      "blockLag": 32,
+      "blockLag": 55,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -256,10 +298,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 7,
-        "p95": 10
+        "p50": 34,
+        "p95": 35
       },
-      "blockLag": 31,
+      "blockLag": 53,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -276,10 +318,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 7,
-        "p95": 7
+        "p50": 30,
+        "p95": 30
       },
-      "blockLag": 31,
+      "blockLag": 53,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -296,10 +338,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 6,
-        "p95": 7
+        "p50": 32,
+        "p95": 33
       },
-      "blockLag": 30,
+      "blockLag": 53,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -316,10 +358,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 5,
-        "p95": 13
+        "p50": 28,
+        "p95": 28
       },
-      "blockLag": 25,
+      "blockLag": 46,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -336,10 +378,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 6,
-        "p95": 11
+        "p50": 29,
+        "p95": 32
       },
-      "blockLag": 20,
+      "blockLag": 35,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -356,10 +398,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 5,
-        "p95": 13
+        "p50": 40,
+        "p95": 41
       },
-      "blockLag": 19,
+      "blockLag": 35,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -376,10 +418,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 5,
-        "p95": 12
+        "p50": 30,
+        "p95": 30
       },
-      "blockLag": 19,
+      "blockLag": 34,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -396,10 +438,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 6,
-        "p95": 16
+        "p50": 30,
+        "p95": 30
       },
-      "blockLag": 18,
+      "blockLag": 34,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -416,10 +458,10 @@
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 4,
-        "p95": 6
+        "p50": 27,
+        "p95": 33
       },
-      "blockLag": 16,
+      "blockLag": 34,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -432,99 +474,15 @@
       "errorKind": null
     },
     {
-      "url": "https://rpc-bsc.blockmachine.io",
-      "tracking": "none",
-      "score": 69.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 132,
-        "p95": 517
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 98,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://bsc.rpc.blxrbdn.com",
-      "tracking": "yes",
-      "score": 69.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 5,
-        "p95": 7
-      },
-      "blockLag": 7,
-      "rateLimit": {
-        "sustainableRps": 20,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 30,
-        "rateLimit": 67
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://public-bsc.nownodes.io",
-      "tracking": "yes",
-      "score": 64.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 150,
-        "p95": 194
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 5,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 97,
-        "freshness": 70,
-        "rateLimit": 17
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc.swiftnodes.io/rpc/bsc",
-      "tracking": "limited",
-      "score": 63.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 118,
-        "p95": 118
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 99,
-        "freshness": 80,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://rpc-bsc.48.club",
       "tracking": "limited",
       "score": 60.1,
       "alive": true,
       "latencyMs": {
-        "p50": 16,
-        "p95": 987
+        "p50": 62,
+        "p95": 1146
       },
-      "blockLag": 14,
+      "blockLag": 29,
       "rateLimit": {
         "sustainableRps": 20,
         "throttled": true
@@ -539,62 +497,146 @@
     {
       "url": "https://0.48.club",
       "tracking": "limited",
-      "score": 55,
+      "score": 60.1,
       "alive": true,
       "latencyMs": {
-        "p50": 17,
-        "p95": 767
+        "p50": 59,
+        "p95": 1009
       },
-      "blockLag": 13,
+      "blockLag": 29,
       "rateLimit": {
-        "sustainableRps": 15,
+        "sustainableRps": 20,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 0,
-        "rateLimit": 50
+        "rateLimit": 67
       },
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://xrpc.cl/bsc",
-      "tracking": "none",
-      "score": 48.7,
+      "url": "https://bsc.rpc.blxrbdn.com",
+      "tracking": "yes",
+      "score": 45.1,
       "alive": true,
       "latencyMs": {
-        "p50": 158,
-        "p95": 336
+        "p50": 29,
+        "p95": 35
       },
-      "blockLag": 31,
+      "blockLag": 20,
       "rateLimit": {
-        "sustainableRps": 10,
+        "sustainableRps": 5,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 0,
+        "rateLimit": 17
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://xrpc.cl/bsc",
+      "tracking": "none",
+      "score": 43.5,
+      "alive": true,
+      "latencyMs": {
+        "p50": 180,
+        "p95": 452
+      },
+      "blockLag": 52,
+      "rateLimit": {
+        "sustainableRps": 5,
         "throttled": true
       },
       "subScores": {
-        "latency": 97,
+        "latency": 96,
         "freshness": 0,
-        "rateLimit": 33
+        "rateLimit": 17
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://bsc.meowrpc.com",
       "tracking": "none",
-      "score": 41.8,
+      "score": 39.2,
       "alive": true,
       "latencyMs": {
-        "p50": 733,
-        "p95": 733
+        "p50": 136,
+        "p95": 136
       },
-      "blockLag": 5,
+      "blockLag": 17,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 67,
-        "freshness": 50,
+        "latency": 98,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://public-bsc.nownodes.io",
+      "tracking": "yes",
+      "score": 38.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 150,
+        "p95": 164
+      },
+      "blockLag": 12,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 97,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api.zan.top/bsc-mainnet",
+      "tracking": "limited",
+      "score": 37.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 224,
+        "p95": 225
+      },
+      "blockLag": 15,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 93,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://api-bsc-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "tracking": "limited",
+      "score": 21,
+      "alive": true,
+      "latencyMs": {
+        "p50": 2114,
+        "p95": 2114
+      },
+      "blockLag": 3,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 0,
+        "freshness": 70,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -780,36 +822,6 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://bsc-mainnet.public.blastapi.io",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.zan.top/bsc-mainnet",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://bsc-mainnet.4everland.org/v1/37fa9972c1b1cd5fab542c7bdd4cde2f",
       "tracking": "limited",
       "score": 0,
@@ -840,7 +852,7 @@
       "errorKind": "network"
     },
     {
-      "url": "https://api-bsc-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "url": "https://rpc.swiftnodes.io/rpc/bsc",
       "tracking": "limited",
       "score": 0,
       "alive": false,
