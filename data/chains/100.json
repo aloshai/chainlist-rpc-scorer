@@ -1,15 +1,16 @@
 {
   "chainId": 100,
   "name": "Gnosis",
-  "updatedAt": "2026-10-10T12:46:01.619Z",
+  "updatedAt": "2026-10-10T13:08:58.632Z",
   "rpcs": [
     {
-      "url": "https://gnosis.oat.farm",
+      "url": "https://gnosis.drpc.org",
+      "tracking": "none",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 74,
-        "p95": 250
+        "p50": 30,
+        "p95": 32
       },
       "blockLag": 0,
       "rateLimit": {
@@ -24,13 +25,13 @@
       "errorKind": null
     },
     {
-      "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
-      "tracking": "yes",
-      "score": 98,
+      "url": "https://gnosis-rpc.publicnode.com",
+      "tracking": "none",
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 195,
-        "p95": 972
+        "p50": 14,
+        "p95": 453
       },
       "blockLag": 0,
       "rateLimit": {
@@ -38,7 +39,68 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 95,
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://gnosis.oat.farm",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 15,
+        "p95": 623
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 35,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://rpc.gnosischain.com",
+      "score": 99.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 136,
+        "p95": 633
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 98,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
+      "tracking": "yes",
+      "score": 98.8,
+      "alive": true,
+      "latencyMs": {
+        "p50": 151,
+        "p95": 589
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 97,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -50,8 +112,8 @@
       "score": 97.6,
       "alive": true,
       "latencyMs": {
-        "p50": 207,
-        "p95": 1354
+        "p50": 220,
+        "p95": 577
       },
       "blockLag": 0,
       "rateLimit": {
@@ -66,105 +128,64 @@
       "errorKind": null
     },
     {
-      "url": "https://gnosis.drpc.org",
-      "tracking": "none",
-      "score": 97,
+      "url": "https://gnosis-rpc.blockreq.com/v1/rpc/public",
+      "score": 90.1,
       "alive": true,
       "latencyMs": {
-        "p50": 59,
-        "p95": 62
+        "p50": 85,
+        "p95": 270
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 20,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
-        "rateLimit": 100
+        "freshness": 100,
+        "rateLimit": 67
       },
-      "errorKind": null
-    },
-    {
-      "url": "https://gnosis-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 97,
-      "alive": true,
-      "latencyMs": {
-        "p50": 89,
-        "p95": 339
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.gnosis.gateway.fm",
       "tracking": "yes",
-      "score": 95,
+      "score": 73.9,
       "alive": true,
       "latencyMs": {
-        "p50": 200,
-        "p95": 1503
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 95,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://rpc.gnosischain.com",
-      "score": 95,
-      "alive": true,
-      "latencyMs": {
-        "p50": 194,
-        "p95": 968
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 95,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://gnosis-rpc.blockreq.com/v1/rpc/public",
-      "score": 84.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 116,
-        "p95": 297
+        "p50": 153,
+        "p95": 638
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 15,
+        "sustainableRps": 5,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 97,
+        "freshness": 100,
+        "rateLimit": 17
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://100.rpc.thirdweb.com",
+      "tracking": "yes",
+      "score": 54,
+      "alive": true,
+      "latencyMs": {
+        "p50": 866,
+        "p95": 866
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
+        "latency": 60,
         "freshness": 100,
-        "rateLimit": 50
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -305,21 +326,6 @@
     },
     {
       "url": "https://gno-mainnet.gateway.tatum.io",
-      "tracking": "yes",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://100.rpc.thirdweb.com",
       "tracking": "yes",
       "score": 0,
       "alive": false,
