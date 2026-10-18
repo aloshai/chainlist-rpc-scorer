@@ -1,15 +1,15 @@
 {
   "chainId": 97,
   "name": "BNB Smart Chain Testnet",
-  "updatedAt": "2026-10-18T13:08:04.557Z",
+  "updatedAt": "2026-10-18T13:34:13.716Z",
   "rpcs": [
     {
       "url": "https://data-seed-prebsc-2-s3.bnbchain.org:8545",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 58
+        "p50": 67,
+        "p95": 98
       },
       "blockLag": 0,
       "rateLimit": {
@@ -25,11 +25,31 @@
     },
     {
       "url": "https://data-seed-prebsc-1-s3.bnbchain.org:8545",
+      "score": 97,
+      "alive": true,
+      "latencyMs": {
+        "p50": 65,
+        "p95": 102
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://data-seed-prebsc-2-s2.bnbchain.org:8545",
       "score": 91,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 61
+        "p50": 65,
+        "p95": 92
       },
       "blockLag": 3,
       "rateLimit": {
@@ -44,12 +64,13 @@
       "errorKind": null
     },
     {
-      "url": "https://data-seed-prebsc-2-s2.bnbchain.org:8545",
+      "url": "https://bsc-testnet-rpc.publicnode.com",
+      "tracking": "none",
       "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 57,
-        "p95": 64
+        "p50": 47,
+        "p95": 582
       },
       "blockLag": 4,
       "rateLimit": {
@@ -68,8 +89,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 60
+        "p50": 21,
+        "p95": 32
       },
       "blockLag": 5,
       "rateLimit": {
@@ -88,8 +109,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 60
+        "p50": 28,
+        "p95": 40
       },
       "blockLag": 5,
       "rateLimit": {
@@ -108,8 +129,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 57,
-        "p95": 58
+        "p50": 30,
+        "p95": 48
       },
       "blockLag": 5,
       "rateLimit": {
@@ -124,34 +145,13 @@
       "errorKind": null
     },
     {
-      "url": "https://bsc-testnet-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 82,
-      "alive": true,
-      "latencyMs": {
-        "p50": 83,
-        "p95": 731
-      },
-      "blockLag": 6,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 40,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
       "url": "https://bsc-testnet.rpc.sentio.xyz",
       "tracking": "limited",
       "score": 82,
       "alive": true,
       "latencyMs": {
-        "p50": 54,
-        "p95": 56
+        "p50": 62,
+        "p95": 68
       },
       "blockLag": 6,
       "rateLimit": {
@@ -168,44 +168,23 @@
     {
       "url": "https://bsc-testnet.drpc.org",
       "tracking": "none",
-      "score": 73,
+      "score": 79,
       "alive": true,
       "latencyMs": {
-        "p50": 17,
+        "p50": 19,
         "p95": 22
       },
-      "blockLag": 9,
+      "blockLag": 7,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 10,
+        "freshness": 30,
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://bnb-testnet.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 39.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 702,
-        "p95": 702
-      },
-      "blockLag": 6,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 68,
-        "freshness": 40,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/bsc/testnet/public",
@@ -281,6 +260,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://bnb-testnet.api.onfinality.io/public",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://bsc-testnet.therpc.io",
