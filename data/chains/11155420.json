@@ -1,15 +1,15 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-10-22T19:07:40.785Z",
+  "updatedAt": "2026-10-22T19:36:08.466Z",
   "rpcs": [
     {
       "url": "https://optimism-sepolia.drpc.org",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 66,
-        "p95": 71
+        "p50": 31,
+        "p95": 41
       },
       "blockLag": 0,
       "rateLimit": {
@@ -25,11 +25,11 @@
     },
     {
       "url": "https://sepolia.optimism.io",
-      "score": 96.4,
+      "score": 95.2,
       "alive": true,
       "latencyMs": {
-        "p50": 269,
-        "p95": 352
+        "p50": 330,
+        "p95": 414
       },
       "blockLag": 0,
       "rateLimit": {
@@ -37,7 +37,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 91,
+        "latency": 88,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -49,8 +49,8 @@
       "score": 90.1,
       "alive": true,
       "latencyMs": {
-        "p50": 82,
-        "p95": 188
+        "p50": 81,
+        "p95": 172
       },
       "blockLag": 0,
       "rateLimit": {
@@ -65,15 +65,36 @@
       "errorKind": "rate_limit"
     },
     {
+      "url": "https://lb.routeme.sh/rpc/evm/11155420",
+      "tracking": "limited",
+      "score": 69.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 139,
+        "p95": 139
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 98,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://op-sepolia-testnet.api.pocket.network",
       "tracking": "none",
       "score": 68.4,
       "alive": true,
       "latencyMs": {
-        "p50": 173,
-        "p95": 675
+        "p50": 169,
+        "p95": 665
       },
-      "blockLag": 7423,
+      "blockLag": 8272,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -84,27 +105,6 @@
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://api.zan.top/opt-sepolia",
-      "tracking": "limited",
-      "score": 68.4,
-      "alive": true,
-      "latencyMs": {
-        "p50": 169,
-        "p95": 169
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 96,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/op/sepolia/public",
@@ -122,21 +122,6 @@
       "errorKind": "network"
     },
     {
-      "url": "https://lb.routeme.sh/rpc/evm/11155420",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://public.stackup.sh/api/v1/node/optimism-sepolia",
       "tracking": "limited",
       "score": 0,
@@ -150,6 +135,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://api.zan.top/opt-sepolia",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://optimism-sepolia-public.nodies.app",
