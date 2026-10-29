@@ -1,15 +1,15 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-10-28T23:34:04.725Z",
+  "updatedAt": "2026-10-29T00:20:21.041Z",
   "rpcs": [
     {
       "url": "https://optimism-sepolia.drpc.org",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 31,
-        "p95": 49
+        "p50": 40,
+        "p95": 50
       },
       "blockLag": 0,
       "rateLimit": {
@@ -29,7 +29,7 @@
       "alive": true,
       "latencyMs": {
         "p50": 161,
-        "p95": 193
+        "p95": 278
       },
       "blockLag": 0,
       "rateLimit": {
@@ -44,13 +44,33 @@
       "errorKind": null
     },
     {
+      "url": "https://optimism-sepolia-rpc.blockreq.com/v1/rpc/public",
+      "score": 94.9,
+      "alive": true,
+      "latencyMs": {
+        "p50": 53,
+        "p95": 237
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 25,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://optimism-sepolia.gateway.tenderly.co",
       "tracking": "yes",
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 86,
-        "p95": 149
+        "p50": 83,
+        "p95": 184
       },
       "blockLag": 0,
       "rateLimit": {
@@ -70,10 +90,10 @@
       "score": 68.8,
       "alive": true,
       "latencyMs": {
-        "p50": 151,
-        "p95": 1956
+        "p50": 150,
+        "p95": 575
       },
-      "blockLag": 274450,
+      "blockLag": 275837,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
@@ -174,20 +194,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://optimism-sepolia-rpc.blockreq.com/v1/rpc/public",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
