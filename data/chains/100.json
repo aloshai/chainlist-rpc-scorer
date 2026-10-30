@@ -1,7 +1,7 @@
 {
   "chainId": 100,
   "name": "Gnosis",
-  "updatedAt": "2026-10-30T07:34:12.450Z",
+  "updatedAt": "2026-10-30T08:10:14.425Z",
   "rpcs": [
     {
       "url": "https://gnosis.drpc.org",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 26,
-        "p95": 34
+        "p50": 30,
+        "p95": 32
       },
       "blockLag": 0,
       "rateLimit": {
@@ -30,8 +30,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 100,
-        "p95": 147
+        "p50": 58,
+        "p95": 533
       },
       "blockLag": 0,
       "rateLimit": {
@@ -50,20 +50,20 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 58,
-        "p95": 618
+        "p50": 30,
+        "p95": 479
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 30,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 100,
         "rateLimit": 100
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.gnosis.gateway.fm",
@@ -71,8 +71,8 @@
       "score": 98.4,
       "alive": true,
       "latencyMs": {
-        "p50": 175,
-        "p95": 691
+        "p50": 174,
+        "p95": 1065
       },
       "blockLag": 0,
       "rateLimit": {
@@ -91,8 +91,8 @@
       "score": 98.4,
       "alive": true,
       "latencyMs": {
-        "p50": 173,
-        "p95": 607
+        "p50": 183,
+        "p95": 551
       },
       "blockLag": 0,
       "rateLimit": {
@@ -109,11 +109,11 @@
     {
       "url": "https://gnosis.api.pocket.network",
       "tracking": "none",
-      "score": 96.4,
+      "score": 96.8,
       "alive": true,
       "latencyMs": {
-        "p50": 273,
-        "p95": 1129
+        "p50": 255,
+        "p95": 958
       },
       "blockLag": 0,
       "rateLimit": {
@@ -121,7 +121,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 91,
+        "latency": 92,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -130,11 +130,11 @@
     {
       "url": "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
       "tracking": "yes",
-      "score": 96.4,
+      "score": 92.8,
       "alive": true,
       "latencyMs": {
-        "p50": 272,
-        "p95": 670
+        "p50": 433,
+        "p95": 723
       },
       "blockLag": 0,
       "rateLimit": {
@@ -142,40 +142,20 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 91,
+        "latency": 82,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://gnosis-rpc.blockreq.com/v1/rpc/public",
-      "score": 70,
-      "alive": true,
-      "latencyMs": {
-        "p50": 43,
-        "p95": 109
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://100.rpc.thirdweb.com",
       "tracking": "yes",
-      "score": 69.2,
+      "score": 61.6,
       "alive": true,
       "latencyMs": {
-        "p50": 142,
-        "p95": 142
+        "p50": 490,
+        "p95": 490
       },
       "blockLag": 0,
       "rateLimit": {
@@ -183,7 +163,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 98,
+        "latency": 79,
         "freshness": 100,
         "rateLimit": 0
       },
@@ -380,6 +360,20 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://gnosis-rpc.blockreq.com/v1/rpc/public",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     }
   ]
 }
