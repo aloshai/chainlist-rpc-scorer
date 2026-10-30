@@ -1,7 +1,7 @@
 {
   "chainId": 10200,
   "name": "Gnosis Chiado Testnet",
-  "updatedAt": "2026-10-30T05:33:58.125Z",
+  "updatedAt": "2026-10-30T06:12:38.890Z",
   "rpcs": [
     {
       "url": "https://gnosis-chiado-rpc.publicnode.com",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 56,
-        "p95": 113
+        "p50": 108,
+        "p95": 426
       },
       "blockLag": 0,
       "rateLimit": {
@@ -19,6 +19,26 @@
       },
       "subScores": {
         "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://rpc.chiadochain.net",
+      "score": 98,
+      "alive": true,
+      "latencyMs": {
+        "p50": 203,
+        "p95": 597
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 95,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -27,11 +47,11 @@
     {
       "url": "https://rpc.chiado.gnosis.gateway.fm",
       "tracking": "yes",
-      "score": 98.4,
+      "score": 96.8,
       "alive": true,
       "latencyMs": {
-        "p50": 178,
-        "p95": 250
+        "p50": 247,
+        "p95": 616
       },
       "blockLag": 0,
       "rateLimit": {
@@ -39,48 +59,48 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 96,
+        "latency": 92,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://rpc.chiadochain.net",
-      "score": 98.4,
+      "url": "https://gnosis-chiado-rpc.blockreq.com/v1/rpc/public",
+      "score": 94.9,
       "alive": true,
       "latencyMs": {
-        "p50": 180,
-        "p95": 256
+        "p50": 67,
+        "p95": 267
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 25,
+        "throttled": true
       },
       "subScores": {
-        "latency": 96,
+        "latency": 100,
         "freshness": 100,
-        "rateLimit": 100
+        "rateLimit": 83
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://gnosis-chiado.drpc.org",
-      "score": 97,
+      "score": 82,
       "alive": true,
       "latencyMs": {
-        "p50": 29,
-        "p95": 32
+        "p50": 30,
+        "p95": 35
       },
-      "blockLag": 1,
+      "blockLag": 6,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 40,
         "rateLimit": 100
       },
       "errorKind": null
@@ -114,20 +134,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://gnosis-chiado-rpc.blockreq.com/v1/rpc/public",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
