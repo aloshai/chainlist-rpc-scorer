@@ -1,48 +1,47 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-11-02T06:44:05.714Z",
+  "updatedAt": "2026-11-02T07:08:19.344Z",
   "rpcs": [
     {
-      "url": "https://cronos-testnet.drpc.org",
-      "score": 88,
+      "url": "https://evm-t3.cronos.org",
+      "score": 96,
       "alive": true,
       "latencyMs": {
-        "p50": 28,
-        "p95": 31
+        "p50": 292,
+        "p95": 325
       },
-      "blockLag": 4,
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 90,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://cronos-testnet.drpc.org",
+      "score": 91,
+      "alive": true,
+      "latencyMs": {
+        "p50": 40,
+        "p95": 48
+      },
+      "blockLag": 3,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 60,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://cro-testnet.gateway.tatum.io",
-      "tracking": "yes",
-      "score": 65.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 331,
-        "p95": 337
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 88,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/testnet/public",
@@ -75,7 +74,8 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://evm-t3.cronos.org",
+      "url": "https://cro-testnet.gateway.tatum.io",
+      "tracking": "yes",
       "score": 0,
       "alive": false,
       "latencyMs": null,
@@ -86,7 +86,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     }
   ]
 }
