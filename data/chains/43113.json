@@ -1,7 +1,7 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-11-06T17:33:07.501Z",
+  "updatedAt": "2026-11-06T18:08:52.558Z",
   "rpcs": [
     {
       "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 88,
-        "p95": 386
+        "p50": 73,
+        "p95": 631
       },
       "blockLag": 0,
       "rateLimit": {
@@ -30,8 +30,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 56,
-        "p95": 59
+        "p50": 22,
+        "p95": 28
       },
       "blockLag": 0,
       "rateLimit": {
@@ -47,11 +47,11 @@
     },
     {
       "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 100,
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 93,
-        "p95": 212
+        "p50": 110,
+        "p95": 684
       },
       "blockLag": 0,
       "rateLimit": {
@@ -59,11 +59,32 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 100,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
+      "tracking": "limited",
+      "score": 68,
+      "alive": true,
+      "latencyMs": {
+        "p50": 204,
+        "p95": 204
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 95,
+        "freshness": 100,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/fuji/public",
@@ -109,21 +130,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://api.zan.top/avax-fuji/ext/bc/C/rpc",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://avalanche-fuji.therpc.io",
