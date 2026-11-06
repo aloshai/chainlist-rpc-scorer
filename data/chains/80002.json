@@ -1,16 +1,16 @@
 {
   "chainId": 80002,
   "name": "Amoy",
-  "updatedAt": "2026-11-06T00:17:44.205Z",
+  "updatedAt": "2026-11-06T00:44:05.660Z",
   "rpcs": [
     {
       "url": "https://poly-amoy-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 99.2,
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 147,
-        "p95": 768
+        "p50": 119,
+        "p95": 490
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,19 +18,40 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
+      "url": "https://polygon-amoy.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 97,
+      "alive": true,
+      "latencyMs": {
+        "p50": 59,
+        "p95": 521
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 30,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
       "url": "https://polygon-amoy-bor-rpc.publicnode.com",
       "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 76,
-        "p95": 186
+        "p50": 53,
+        "p95": 77
       },
       "blockLag": 1,
       "rateLimit": {
@@ -50,8 +71,8 @@
       "score": 94,
       "alive": true,
       "latencyMs": {
-        "p50": 55,
-        "p95": 57
+        "p50": 50,
+        "p95": 58
       },
       "blockLag": 2,
       "rateLimit": {
@@ -66,13 +87,12 @@
       "errorKind": null
     },
     {
-      "url": "https://polygon-amoy.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 91.9,
+      "url": "https://polygon-amoy-rpc.blockreq.com/v1/rpc/public",
+      "score": 91.5,
       "alive": true,
       "latencyMs": {
-        "p50": 81,
-        "p95": 227
+        "p50": 118,
+        "p95": 403
       },
       "blockLag": 1,
       "rateLimit": {
@@ -80,7 +100,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 100,
+        "latency": 99,
         "freshness": 90,
         "rateLimit": 83
       },
@@ -234,20 +254,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://polygon-amoy-rpc.blockreq.com/v1/rpc/public",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
