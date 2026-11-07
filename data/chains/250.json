@@ -1,7 +1,7 @@
 {
   "chainId": 250,
   "name": "Fantom Opera",
-  "updatedAt": "2026-11-07T08:07:45.390Z",
+  "updatedAt": "2026-11-07T08:33:18.080Z",
   "rpcs": [
     {
       "url": "https://fantom.drpc.org",
@@ -9,8 +9,8 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 36,
-        "p95": 187
+        "p50": 38,
+        "p95": 45
       },
       "blockLag": 0,
       "rateLimit": {
@@ -27,11 +27,11 @@
     {
       "url": "https://fantom.api.pocket.network",
       "tracking": "none",
-      "score": 99.2,
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 138,
-        "p95": 624
+        "p50": 119,
+        "p95": 408
       },
       "blockLag": 0,
       "rateLimit": {
@@ -39,7 +39,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -50,8 +50,28 @@
       "score": 79.5,
       "alive": true,
       "latencyMs": {
-        "p50": 116,
-        "p95": 116
+        "p50": 122,
+        "p95": 130
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 10,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 99,
+        "freshness": 100,
+        "rateLimit": 33
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://rpc.fantom.network",
+      "score": 79.5,
+      "alive": true,
+      "latencyMs": {
+        "p50": 120,
+        "p95": 121
       },
       "blockLag": 0,
       "rateLimit": {
@@ -70,8 +90,8 @@
       "score": 79.5,
       "alive": true,
       "latencyMs": {
-        "p50": 113,
-        "p95": 113
+        "p50": 124,
+        "p95": 136
       },
       "blockLag": 0,
       "rateLimit": {
@@ -87,31 +107,11 @@
     },
     {
       "url": "https://rpc3.fantom.network",
-      "score": 79.5,
-      "alive": true,
-      "latencyMs": {
-        "p50": 115,
-        "p95": 115
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 10,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 99,
-        "freshness": 100,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://rpc.fantom.network",
       "score": 74.7,
       "alive": true,
       "latencyMs": {
-        "p50": 116,
-        "p95": 117
+        "p50": 121,
+        "p95": 121
       },
       "blockLag": 0,
       "rateLimit": {
@@ -126,13 +126,13 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://250.rpc.thirdweb.com",
-      "tracking": "yes",
+      "url": "https://fantom.api.onfinality.io/public",
+      "tracking": "limited",
       "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 95,
-        "p95": 412
+        "p50": 93,
+        "p95": 93
       },
       "blockLag": 0,
       "rateLimit": {
@@ -147,13 +147,13 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://api.zan.top/ftm-mainnet",
-      "tracking": "limited",
-      "score": 67.2,
+      "url": "https://250.rpc.thirdweb.com",
+      "tracking": "yes",
+      "score": 62.4,
       "alive": true,
       "latencyMs": {
-        "p50": 235,
-        "p95": 235
+        "p50": 469,
+        "p95": 469
       },
       "blockLag": 0,
       "rateLimit": {
@@ -161,28 +161,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 93,
-        "freshness": 100,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://fantom.api.onfinality.io/public",
-      "tracking": "limited",
-      "score": 65.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 327,
-        "p95": 327
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 88,
+        "latency": 81,
         "freshness": 100,
         "rateLimit": 0
       },
@@ -262,6 +241,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://api.zan.top/ftm-mainnet",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.owlracle.info/ftm/70d38ce1826c4a60bb2a8e05a6c8b20f",
