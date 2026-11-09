@@ -1,16 +1,16 @@
 {
   "chainId": 421614,
   "name": "Arbitrum Sepolia",
-  "updatedAt": "2026-11-09T02:33:23.872Z",
+  "updatedAt": "2026-11-09T03:08:51.490Z",
   "rpcs": [
     {
       "url": "https://arbitrum-sepolia-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 99.2,
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 144,
-        "p95": 711
+        "p50": 121,
+        "p95": 446
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,28 +18,49 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://arbitrum-sepolia-rpc.publicnode.com",
-      "score": 94,
+      "url": "https://api.zan.top/arb-sepolia",
+      "tracking": "limited",
+      "score": 93.8,
       "alive": true,
       "latencyMs": {
-        "p50": 74,
-        "p95": 184
+        "p50": 261,
+        "p95": 264
       },
-      "blockLag": 2,
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 30,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 92,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://arbitrum-sepolia-rpc.publicnode.com",
+      "score": 91,
+      "alive": true,
+      "latencyMs": {
+        "p50": 50,
+        "p95": 71
+      },
+      "blockLag": 3,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 80,
+        "freshness": 70,
         "rateLimit": 100
       },
       "errorKind": null
@@ -50,8 +71,8 @@
       "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 64,
-        "p95": 80
+        "p50": 30,
+        "p95": 31
       },
       "blockLag": 5,
       "rateLimit": {
@@ -67,20 +88,20 @@
     },
     {
       "url": "https://sepolia-rollup.arbitrum.io/rpc",
-      "score": 82,
+      "score": 85,
       "alive": true,
       "latencyMs": {
-        "p50": 39,
-        "p95": 63
+        "p50": 45,
+        "p95": 62
       },
-      "blockLag": 6,
+      "blockLag": 5,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 40,
+        "freshness": 50,
         "rateLimit": 100
       },
       "errorKind": null
@@ -91,8 +112,8 @@
       "score": 76,
       "alive": true,
       "latencyMs": {
-        "p50": 65,
-        "p95": 493
+        "p50": 46,
+        "p95": 109
       },
       "blockLag": 3,
       "rateLimit": {
@@ -103,47 +124,6 @@
         "latency": 100,
         "freshness": 70,
         "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.zan.top/arb-sepolia",
-      "tracking": "limited",
-      "score": 58.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 219,
-        "p95": 219
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 94,
-        "freshness": 70,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://arbitrum-sepolia-rpc.blockreq.com/v1/rpc/public",
-      "score": 56.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 589,
-        "p95": 589
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 74,
-        "freshness": 90,
-        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -206,6 +186,20 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://arbitrum-sepolia-rpc.blockreq.com/v1/rpc/public",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     }
   ]
 }
