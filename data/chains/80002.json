@@ -1,16 +1,16 @@
 {
   "chainId": 80002,
   "name": "Amoy",
-  "updatedAt": "2026-11-11T07:33:28.674Z",
+  "updatedAt": "2026-11-11T08:08:36.395Z",
   "rpcs": [
     {
       "url": "https://poly-amoy-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 99.6,
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 113,
-        "p95": 690
+        "p50": 105,
+        "p95": 837
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,7 +18,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 99,
+        "latency": 100,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -26,20 +26,20 @@
     },
     {
       "url": "https://polygon-amoy-bor-rpc.publicnode.com",
-      "score": 97,
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 20,
-        "p95": 343
+        "p50": 21,
+        "p95": 542
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
@@ -47,11 +47,32 @@
     {
       "url": "https://polygon-amoy.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 87.1,
+      "score": 91.9,
       "alive": true,
       "latencyMs": {
         "p50": 33,
-        "p95": 353
+        "p95": 435
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 25,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 83
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://polygon-amoy.rpc.thyme.sh/public",
+      "tracking": "none",
+      "score": 87.1,
+      "alive": true,
+      "latencyMs": {
+        "p50": 91,
+        "p95": 92
       },
       "blockLag": 1,
       "rateLimit": {
@@ -66,43 +87,23 @@
       "errorKind": "rate_limit"
     },
     {
-      "url": "https://polygon-amoy-rpc.blockreq.com/v1/rpc/public",
-      "score": 84.6,
+      "url": "https://api.zan.top/polygon-amoy",
+      "tracking": "limited",
+      "score": 64.2,
       "alive": true,
       "latencyMs": {
-        "p50": 118,
-        "p95": 740
-      },
-      "blockLag": 0,
-      "rateLimit": {
-        "sustainableRps": 15,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 99,
-        "freshness": 100,
-        "rateLimit": 50
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://polygon-amoy.rpc.thyme.sh/public",
-      "tracking": "none",
-      "score": 76.9,
-      "alive": true,
-      "latencyMs": {
-        "p50": 91,
-        "p95": 93
+        "p50": 235,
+        "p95": 235
       },
       "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 10,
+        "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
-        "latency": 100,
+        "latency": 93,
         "freshness": 90,
-        "rateLimit": 33
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -182,21 +183,6 @@
       "errorKind": "network"
     },
     {
-      "url": "https://api.zan.top/polygon-amoy",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
-    },
-    {
       "url": "https://polygon-amoy-public.nodies.app",
       "tracking": "limited",
       "score": 0,
@@ -269,6 +255,20 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://polygon-amoy-rpc.blockreq.com/v1/rpc/public",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     }
   ]
 }
