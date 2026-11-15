@@ -1,16 +1,15 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-11-15T09:33:07.993Z",
+  "updatedAt": "2026-11-15T10:05:44.869Z",
   "rpcs": [
     {
-      "url": "https://op-sepolia-testnet.api.pocket.network",
-      "tracking": "none",
-      "score": 99.2,
+      "url": "https://sepolia.optimism.io",
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 137,
-        "p95": 495
+        "p50": 109,
+        "p95": 164
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,19 +17,20 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
+        "latency": 100,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://sepolia.optimism.io",
-      "score": 99.2,
+      "url": "https://op-sepolia-testnet.api.pocket.network",
+      "tracking": "none",
+      "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 131,
-        "p95": 184
+        "p50": 111,
+        "p95": 467
       },
       "blockLag": 0,
       "rateLimit": {
@@ -38,7 +38,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 98,
+        "latency": 99,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -47,21 +47,42 @@
     {
       "url": "https://optimism-sepolia.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 82,
+      "score": 79.9,
       "alive": true,
       "latencyMs": {
-        "p50": 51,
-        "p95": 183
+        "p50": 29,
+        "p95": 80
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 15,
+        "sustainableRps": 10,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
-        "rateLimit": 50
+        "freshness": 100,
+        "rateLimit": 33
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://lb.routeme.sh/rpc/evm/11155420",
+      "tracking": "limited",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 65,
+        "p95": 65
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -79,21 +100,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/11155420",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://api.zan.top/opt-sepolia",
