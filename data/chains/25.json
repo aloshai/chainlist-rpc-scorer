@@ -1,16 +1,16 @@
 {
   "chainId": 25,
   "name": "Cronos Mainnet",
-  "updatedAt": "2026-11-16T10:07:42.253Z",
+  "updatedAt": "2026-11-16T10:35:04.670Z",
   "rpcs": [
     {
-      "url": "https://cronos.rpc.sentio.xyz",
-      "tracking": "limited",
+      "url": "https://cronos-evm-rpc.publicnode.com",
+      "tracking": "none",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 81,
-        "p95": 87
+        "p50": 92,
+        "p95": 115
       },
       "blockLag": 0,
       "rateLimit": {
@@ -25,12 +25,33 @@
       "errorKind": null
     },
     {
-      "url": "https://rpc.vvs.finance",
+      "url": "https://cronos.rpc.sentio.xyz",
+      "tracking": "limited",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 20,
+        "p95": 31
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://evm.cronos.org",
       "score": 99.6,
       "alive": true,
       "latencyMs": {
-        "p50": 126,
-        "p95": 1106
+        "p50": 111,
+        "p95": 145
       },
       "blockLag": 0,
       "rateLimit": {
@@ -45,86 +66,24 @@
       "errorKind": null
     },
     {
-      "url": "https://cronos-rpc.blockreq.com/v1/rpc/public",
-      "score": 94.9,
+      "url": "https://rpc.vvs.finance",
+      "score": 99.2,
       "alive": true,
       "latencyMs": {
-        "p50": 107,
-        "p95": 270
+        "p50": 145,
+        "p95": 174
       },
       "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 25,
-        "throttled": true
+        "sustainableRps": 40,
+        "throttled": false
       },
       "subScores": {
-        "latency": 100,
+        "latency": 98,
         "freshness": 100,
-        "rateLimit": 83
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://cronos-evm-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 94,
-      "alive": true,
-      "latencyMs": {
-        "p50": 67,
-        "p95": 727
-      },
-      "blockLag": 2,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 80,
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://evm.cronos.org",
-      "score": 88,
-      "alive": true,
-      "latencyMs": {
-        "p50": 87,
-        "p95": 539
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 100
-      },
-      "errorKind": null
-    },
-    {
-      "url": "https://rpc.swiftnodes.io/rpc/cronos",
-      "tracking": "limited",
-      "score": 58.2,
-      "alive": true,
-      "latencyMs": {
-        "p50": 239,
-        "p95": 239
-      },
-      "blockLag": 3,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 93,
-        "freshness": 70,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://rpc.nodeflare.app/cronos/public",
@@ -154,7 +113,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://cronos.drpc.org",
@@ -215,6 +174,21 @@
         "rateLimit": 0
       },
       "errorKind": "network"
+    },
+    {
+      "url": "https://rpc.swiftnodes.io/rpc/cronos",
+      "tracking": "limited",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://cro-mainnet.gateway.tatum.io",
@@ -302,6 +276,20 @@
         "rateLimit": 0
       },
       "errorKind": "timeout"
+    },
+    {
+      "url": "https://cronos-rpc.blockreq.com/v1/rpc/public",
+      "score": 0,
+      "alive": false,
+      "latencyMs": null,
+      "blockLag": null,
+      "rateLimit": null,
+      "subScores": {
+        "latency": 0,
+        "freshness": 0,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     }
   ]
 }
