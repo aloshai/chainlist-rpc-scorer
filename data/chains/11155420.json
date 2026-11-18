@@ -1,16 +1,16 @@
 {
   "chainId": 11155420,
   "name": "OP Sepolia Testnet",
-  "updatedAt": "2026-11-18T10:33:37.099Z",
+  "updatedAt": "2026-11-18T11:05:44.418Z",
   "rpcs": [
     {
       "url": "https://op-sepolia-testnet.api.pocket.network",
       "tracking": "none",
-      "score": 99.6,
+      "score": 99.2,
       "alive": true,
       "latencyMs": {
-        "p50": 110,
-        "p95": 468
+        "p50": 144,
+        "p95": 669
       },
       "blockLag": 0,
       "rateLimit": {
@@ -18,7 +18,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 99,
+        "latency": 98,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -26,11 +26,11 @@
     },
     {
       "url": "https://sepolia.optimism.io",
-      "score": 99.6,
+      "score": 98.8,
       "alive": true,
       "latencyMs": {
-        "p50": 116,
-        "p95": 208
+        "p50": 150,
+        "p95": 206
       },
       "blockLag": 0,
       "rateLimit": {
@@ -38,7 +38,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 99,
+        "latency": 97,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -47,21 +47,41 @@
     {
       "url": "https://optimism-sepolia.gateway.tenderly.co",
       "tracking": "yes",
-      "score": 79.9,
+      "score": 87.1,
       "alive": true,
       "latencyMs": {
-        "p50": 31,
-        "p95": 234
+        "p50": 70,
+        "p95": 172
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 10,
+        "sustainableRps": 20,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
-        "rateLimit": 33
+        "freshness": 90,
+        "rateLimit": 67
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://optimism-sepolia.drpc.org",
+      "score": 67,
+      "alive": true,
+      "latencyMs": {
+        "p50": 37,
+        "p95": 48
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 90,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
     },
@@ -154,20 +174,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://optimism-sepolia.drpc.org",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://optimism-sepolia-rpc.blockreq.com/v1/rpc/public",
