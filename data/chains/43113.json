@@ -1,15 +1,16 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-11-18T21:33:26.322Z",
+  "updatedAt": "2026-11-18T22:05:35.875Z",
   "rpcs": [
     {
-      "url": "https://api.avax-test.network/ext/bc/C/rpc",
+      "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
+      "tracking": "none",
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 20,
-        "p95": 78
+        "p50": 50,
+        "p95": 115
       },
       "blockLag": 0,
       "rateLimit": {
@@ -24,23 +25,22 @@
       "errorKind": null
     },
     {
-      "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
-      "tracking": "none",
-      "score": 90.1,
+      "url": "https://api.avax-test.network/ext/bc/C/rpc",
+      "score": 97,
       "alive": true,
       "latencyMs": {
-        "p50": 57,
-        "p95": 104
+        "p50": 28,
+        "p95": 161
       },
-      "blockLag": 0,
+      "blockLag": 1,
       "rateLimit": {
-        "sustainableRps": 20,
+        "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
-        "rateLimit": 67
+        "freshness": 90,
+        "rateLimit": 100
       },
       "errorKind": null
     },
@@ -87,7 +87,7 @@
         "freshness": 0,
         "rateLimit": 0
       },
-      "errorKind": "network"
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://ava-testnet.public.blastapi.io/ext/bc/C/rpc",
