@@ -1,15 +1,35 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-11-20T10:33:46.443Z",
+  "updatedAt": "2026-11-20T11:06:06.839Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.org",
-      "score": 80.8,
+      "score": 84,
       "alive": true,
       "latencyMs": {
-        "p50": 1015,
-        "p95": 1346
+        "p50": 298,
+        "p95": 310
+      },
+      "blockLag": 4,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 90,
+        "freshness": 60,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://evm-t3.cronos.com",
+      "score": 82,
+      "alive": true,
+      "latencyMs": {
+        "p50": 956,
+        "p95": 1002
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,31 +37,32 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 52,
+        "latency": 55,
         "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
     },
     {
-      "url": "https://evm-t3.cronos.com",
-      "score": 70.2,
+      "url": "https://lb.routeme.sh/rpc/evm/338",
+      "tracking": "limited",
+      "score": 44.2,
       "alive": true,
       "latencyMs": {
-        "p50": 242,
-        "p95": 798
+        "p50": 322,
+        "p95": 322
       },
-      "blockLag": 9,
+      "blockLag": 7,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 0,
+        "throttled": true
       },
       "subScores": {
-        "latency": 93,
-        "freshness": 10,
-        "rateLimit": 100
+        "latency": 88,
+        "freshness": 30,
+        "rateLimit": 0
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/testnet/public",
@@ -57,21 +78,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://lb.routeme.sh/rpc/evm/338",
-      "tracking": "limited",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://cro-testnet.gateway.tatum.io",
