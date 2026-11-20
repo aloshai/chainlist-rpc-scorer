@@ -1,7 +1,7 @@
 {
   "chainId": 84532,
   "name": "Base Sepolia Testnet",
-  "updatedAt": "2026-11-20T03:07:31.146Z",
+  "updatedAt": "2026-11-20T03:33:11.836Z",
   "rpcs": [
     {
       "url": "https://base-sepolia.rpc.sentio.xyz",
@@ -9,28 +9,28 @@
       "score": 91,
       "alive": true,
       "latencyMs": {
-        "p50": 81,
-        "p95": 85
+        "p50": 87,
+        "p95": 91
       },
       "blockLag": 3,
       "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
+        "sustainableRps": 35,
+        "throttled": true
       },
       "subScores": {
         "latency": 100,
         "freshness": 70,
         "rateLimit": 100
       },
-      "errorKind": null
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://base-sepolia-rpc.publicnode.com",
       "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 23,
-        "p95": 184
+        "p50": 30,
+        "p95": 52
       },
       "blockLag": 4,
       "rateLimit": {
@@ -45,13 +45,34 @@
       "errorKind": null
     },
     {
-      "url": "https://base-testnet.api.pocket.network",
-      "tracking": "none",
-      "score": 69.6,
+      "url": "https://base-sepolia.gateway.tenderly.co",
+      "tracking": "yes",
+      "score": 73,
       "alive": true,
       "latencyMs": {
-        "p50": 111,
-        "p95": 488
+        "p50": 31,
+        "p95": 191
+      },
+      "blockLag": 4,
+      "rateLimit": {
+        "sustainableRps": 15,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 60,
+        "rateLimit": 50
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://base-testnet.api.pocket.network",
+      "tracking": "none",
+      "score": 70,
+      "alive": true,
+      "latencyMs": {
+        "p50": 104,
+        "p95": 437
       },
       "blockLag": 0,
       "rateLimit": {
@@ -59,7 +80,7 @@
         "throttled": true
       },
       "subScores": {
-        "latency": 99,
+        "latency": 100,
         "freshness": 100,
         "rateLimit": 0
       },
@@ -67,62 +88,61 @@
     },
     {
       "url": "https://sepolia.base.org",
-      "score": 67.9,
+      "score": 70,
       "alive": true,
       "latencyMs": {
         "p50": 13,
-        "p95": 89
+        "p95": 27
       },
-      "blockLag": 4,
+      "blockLag": 5,
       "rateLimit": {
-        "sustainableRps": 10,
+        "sustainableRps": 15,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 60,
-        "rateLimit": 33
-      },
-      "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://base-sepolia.gateway.tenderly.co",
-      "tracking": "yes",
-      "score": 63.1,
-      "alive": true,
-      "latencyMs": {
-        "p50": 33,
-        "p95": 91
-      },
-      "blockLag": 4,
-      "rateLimit": {
-        "sustainableRps": 5,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 60,
-        "rateLimit": 17
+        "freshness": 50,
+        "rateLimit": 50
       },
       "errorKind": "rate_limit"
     },
     {
       "url": "https://base-sepolia.api.onfinality.io/public",
       "tracking": "limited",
-      "score": 46,
+      "score": 52,
       "alive": true,
       "latencyMs": {
-        "p50": 60,
-        "p95": 60
+        "p50": 41,
+        "p95": 41
       },
-      "blockLag": 8,
+      "blockLag": 6,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 20,
+        "freshness": 40,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
+    },
+    {
+      "url": "https://base-sepolia-rpc.blockreq.com/v1/rpc/public",
+      "score": 52,
+      "alive": true,
+      "latencyMs": {
+        "p50": 90,
+        "p95": 107
+      },
+      "blockLag": 6,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 40,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -186,20 +206,6 @@
         "rateLimit": 0
       },
       "errorKind": "network"
-    },
-    {
-      "url": "https://base-sepolia-rpc.blockreq.com/v1/rpc/public",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
