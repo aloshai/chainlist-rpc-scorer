@@ -1,7 +1,7 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-11-23T01:07:12.433Z",
+  "updatedAt": "2026-11-23T01:35:36.243Z",
   "rpcs": [
     {
       "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
@@ -9,8 +9,28 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 95,
-        "p95": 239
+        "p50": 24,
+        "p95": 286
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://api.avax-test.network/ext/bc/C/rpc",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 26,
+        "p95": 282
       },
       "blockLag": 0,
       "rateLimit": {
@@ -27,43 +47,23 @@
     {
       "url": "https://avalanche-fuji.drpc.org",
       "tracking": "none",
-      "score": 97,
+      "score": 70,
       "alive": true,
       "latencyMs": {
-        "p50": 57,
-        "p95": 62
+        "p50": 39,
+        "p95": 39
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
-        "sustainableRps": 35,
+        "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
-        "rateLimit": 100
+        "freshness": 100,
+        "rateLimit": 0
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 96.6,
-      "alive": true,
-      "latencyMs": {
-        "p50": 123,
-        "p95": 218
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 40,
-        "throttled": false
-      },
-      "subScores": {
-        "latency": 99,
-        "freshness": 90,
-        "rateLimit": 100
-      },
-      "errorKind": null
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/fuji/public",
