@@ -1,15 +1,35 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-11-24T17:05:57.711Z",
+  "updatedAt": "2026-11-24T17:33:11.340Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.com",
-      "score": 86,
+      "score": 93.8,
       "alive": true,
       "latencyMs": {
-        "p50": 758,
-        "p95": 843
+        "p50": 256,
+        "p95": 991
+      },
+      "blockLag": 1,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 92,
+        "freshness": 90,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://evm-t3.cronos.org",
+      "score": 81.6,
+      "alive": true,
+      "latencyMs": {
+        "p50": 972,
+        "p95": 1118
       },
       "blockLag": 0,
       "rateLimit": {
@@ -17,7 +37,7 @@
         "throttled": false
       },
       "subScores": {
-        "latency": 65,
+        "latency": 54,
         "freshness": 100,
         "rateLimit": 100
       },
@@ -67,20 +87,6 @@
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://evm-t3.cronos.org",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "timeout"
     },
     {
       "url": "https://cronos-testnet.drpc.org",
