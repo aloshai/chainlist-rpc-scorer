@@ -1,7 +1,7 @@
 {
   "chainId": 43113,
   "name": "Avalanche Fuji Testnet",
-  "updatedAt": "2026-11-24T21:05:42.924Z",
+  "updatedAt": "2026-11-24T21:33:16.512Z",
   "rpcs": [
     {
       "url": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
@@ -9,8 +9,29 @@
       "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 78,
-        "p95": 216
+        "p50": 55,
+        "p95": 80
+      },
+      "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://avalanche-fuji.drpc.org",
+      "tracking": "none",
+      "score": 100,
+      "alive": true,
+      "latencyMs": {
+        "p50": 18,
+        "p95": 24
       },
       "blockLag": 0,
       "rateLimit": {
@@ -26,44 +47,23 @@
     },
     {
       "url": "https://api.avax-test.network/ext/bc/C/rpc",
-      "score": 97,
+      "score": 100,
       "alive": true,
       "latencyMs": {
-        "p50": 93,
-        "p95": 233
+        "p50": 42,
+        "p95": 55
       },
-      "blockLag": 1,
+      "blockLag": 0,
       "rateLimit": {
         "sustainableRps": 40,
         "throttled": false
       },
       "subScores": {
         "latency": 100,
-        "freshness": 90,
+        "freshness": 100,
         "rateLimit": 100
       },
       "errorKind": null
-    },
-    {
-      "url": "https://avalanche-fuji.drpc.org",
-      "tracking": "none",
-      "score": 67,
-      "alive": true,
-      "latencyMs": {
-        "p50": 41,
-        "p95": 41
-      },
-      "blockLag": 1,
-      "rateLimit": {
-        "sustainableRps": 0,
-        "throttled": true
-      },
-      "subScores": {
-        "latency": 100,
-        "freshness": 90,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/avax/fuji/public",
