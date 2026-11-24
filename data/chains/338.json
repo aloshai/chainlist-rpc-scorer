@@ -1,24 +1,64 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-11-24T16:07:46.304Z",
+  "updatedAt": "2026-11-24T16:33:30.828Z",
   "rpcs": [
     {
-      "url": "https://cronos-testnet.drpc.org",
-      "score": 70,
+      "url": "https://evm-t3.cronos.org",
+      "score": 83.6,
       "alive": true,
       "latencyMs": {
-        "p50": 27,
-        "p95": 77
+        "p50": 315,
+        "p95": 332
+      },
+      "blockLag": 4,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 89,
+        "freshness": 60,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://evm-t3.cronos.com",
+      "score": 83.2,
+      "alive": true,
+      "latencyMs": {
+        "p50": 900,
+        "p95": 954
       },
       "blockLag": 0,
+      "rateLimit": {
+        "sustainableRps": 40,
+        "throttled": false
+      },
+      "subScores": {
+        "latency": 58,
+        "freshness": 100,
+        "rateLimit": 100
+      },
+      "errorKind": null
+    },
+    {
+      "url": "https://cronos-testnet.drpc.org",
+      "score": 43,
+      "alive": true,
+      "latencyMs": {
+        "p50": 36,
+        "p95": 36
+      },
+      "blockLag": 9,
       "rateLimit": {
         "sustainableRps": 0,
         "throttled": true
       },
       "subScores": {
         "latency": 100,
-        "freshness": 100,
+        "freshness": 10,
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
@@ -67,34 +107,6 @@
         "rateLimit": 0
       },
       "errorKind": "rate_limit"
-    },
-    {
-      "url": "https://evm-t3.cronos.org",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "timeout"
-    },
-    {
-      "url": "https://evm-t3.cronos.com",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "timeout"
     }
   ]
 }
