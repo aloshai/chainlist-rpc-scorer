@@ -1,15 +1,15 @@
 {
   "chainId": 338,
   "name": "Cronos Testnet",
-  "updatedAt": "2026-11-26T04:33:13.356Z",
+  "updatedAt": "2026-11-26T05:07:04.088Z",
   "rpcs": [
     {
       "url": "https://evm-t3.cronos.com",
       "score": 88,
       "alive": true,
       "latencyMs": {
-        "p50": 670,
-        "p95": 709
+        "p50": 669,
+        "p95": 725
       },
       "blockLag": 0,
       "rateLimit": {
@@ -22,6 +22,26 @@
         "rateLimit": 100
       },
       "errorKind": null
+    },
+    {
+      "url": "https://cronos-testnet.drpc.org",
+      "score": 46,
+      "alive": true,
+      "latencyMs": {
+        "p50": 25,
+        "p95": 46
+      },
+      "blockLag": 8,
+      "rateLimit": {
+        "sustainableRps": 0,
+        "throttled": true
+      },
+      "subScores": {
+        "latency": 100,
+        "freshness": 20,
+        "rateLimit": 0
+      },
+      "errorKind": "rate_limit"
     },
     {
       "url": "https://endpoints.omniatech.io/v1/cronos/testnet/public",
@@ -81,20 +101,6 @@
         "rateLimit": 0
       },
       "errorKind": "timeout"
-    },
-    {
-      "url": "https://cronos-testnet.drpc.org",
-      "score": 0,
-      "alive": false,
-      "latencyMs": null,
-      "blockLag": null,
-      "rateLimit": null,
-      "subScores": {
-        "latency": 0,
-        "freshness": 0,
-        "rateLimit": 0
-      },
-      "errorKind": "rate_limit"
     }
   ]
 }
